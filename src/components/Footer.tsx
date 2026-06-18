@@ -1,6 +1,6 @@
 import Link from "next/link";
 
-export default function Footer() {
+export default function Footer({ lng }: { lng: string }) {
   return (
     <footer className="bg-slate-900 text-slate-400 py-12 border-t border-slate-800">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 md:grid-cols-3 gap-8 text-center md:text-left">
@@ -21,7 +21,7 @@ export default function Footer() {
 
         <div className="flex flex-col items-center md:items-end justify-center">
           <p className="text-sm mb-4">&copy; 2026 SecurHome. Tous droits réservés.</p>
-          <Link href="/legal" className="text-sm text-slate-500 hover:text-emerald-400 transition underline">
+          <Link href={`/${lng}/legal`} className="text-sm text-slate-500 hover:text-emerald-400 transition underline">
             Mentions légales et Cookies
           </Link>
         </div>
