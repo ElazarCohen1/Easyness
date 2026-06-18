@@ -1,5 +1,6 @@
 // src/components/Navbar.tsx
 import Link from "next/link";
+import LanguageSwitcher from "./lngSwitcher";
 
 export default function Navbar({ lng }: { lng: string }) {
   return (
@@ -23,6 +24,9 @@ export default function Navbar({ lng }: { lng: string }) {
           <Link href={`/${lng}/contact`} className="bg-emerald-600 text-white px-5 py-2.5 rounded-full text-sm font-semibold hover:bg-emerald-700 transition shadow-sm">
             Contact
           </Link>
+        </div>
+        <div>
+          <LanguageSwitcher />
         </div>
       </div>
     </header>

@@ -1,15 +1,17 @@
 // src/app/[lng]/page.tsx
-import { useTranslations } from "next-intl";
+import { getTranslations } from "next-intl/server";
+
 export default async function Home({
   params,
 }: {
   params: Promise<{ lng: string }>;
 }) {
-  const t = useTranslations('home');
+  const { lng } = await params;
+  const t = await getTranslations('Home');
+
   return (
     <div>
-      <h1>(t('welcome'))</h1>
+      <h1>{t("Welcome")}</h1>
     </div>
   );
-
 }
