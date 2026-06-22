@@ -1,33 +1,48 @@
 // src/components/Navbar.tsx
 import Link from "next/link";
 import LanguageSwitcher from "./lngSwitcher";
+import { getTranslations } from "next-intl/server";
 
-export default function Navbar({ lng }: { lng: string }) {
+export default async function Navbar({ lng }: { lng: string }) {
+  const t = await getTranslations("NavBar");
+
   return (
-    <header className="sticky top-0 z-50 bg-white/80 backdrop-blur-md border-b border-slate-200">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
-        <nav className="hidden md:flex space-x-8 font-semibold text-sm text-slate-600">
-          <Link href={`/${lng}`} className="hover:text-emerald-600 transition-colors">Accueil</Link>
-          <Link href={`/${lng}/presentation`} className="hover:text-emerald-600 transition-colors">La Société</Link>
-          <Link href={`/${lng}/temoignages`} className="hover:text-emerald-600 transition-colors">Témoignages</Link>
+    <header className="sticky top-0 z-50 bg-stone-50 border-b border-stone-200">
+      <div className="max-w-7xl mx-auto px-6 h-18 flex items-center justify-between">
+
+        {/* Logo */}
+        <Link href={`/${lng}`} className="flex items-center gap-1.5 text-xl font-medium tracking-tight text-stone-900 no-underline">
+          Secur
+          <span className="bg-stone-900 text-stone-50 px-2 py-0.5 rounded text-[11px] font-medium tracking-widest uppercase">
+            Home
+          </span>
+        </Link>
+
+        {/* Liens centre */}
+        <nav className="hidden md:flex items-center gap-8">
+          <Link href={`/${lng}/presentation`} className="text-sm text-stone-500 hover:text-stone-900 transition-colors no-underline">
+            {t("Company")}
+          </Link>
+          <Link href={`/${lng}/temoignages`} className="text-sm text-stone-500 hover:text-stone-900 transition-colors no-underline">
+            {t("Testimonials")}
+          </Link>
         </nav>
 
-        <div className="flex justify-center flex-1 md:flex-none">
-          <Link href={`/${lng}`} className="flex items-center space-x-2 group">
-            <span className="text-2xl font-black tracking-tight text-slate-900 group-hover:text-emerald-600 transition duration-300">
-              Secur<span className="text-emerald-600">Home</span>
-            </span>
+        {/* Droite */}
+        <div className="hidden md:flex items-center gap-6">
+          <Link href={`/${lng}/contact`} className="text-sm text-stone-500 hover:text-stone-900 transition-colors no-underline">
+            {t("Contact")}
           </Link>
+
+          <Link href={`/${lng}/contact`} className="text-[13px] font-medium bg-stone-900 text-stone-50 px-5 py-2.5 rounded-md hover:bg-stone-700 transition-colors no-underline">
+            {t("Quote")}
+          </Link>
+
+          <div className="flex items-center gap-1.5 pl-5 border-l border-stone-200">
+            <LanguageSwitcher />
+          </div>
         </div>
 
-        <div className="hidden md:flex items-center">
-          <Link href={`/${lng}/contact`} className="bg-emerald-600 text-white px-5 py-2.5 rounded-full text-sm font-semibold hover:bg-emerald-700 transition shadow-sm">
-            Contact
-          </Link>
-        </div>
-        <div>
-          <LanguageSwitcher />
-        </div>
       </div>
     </header>
   );

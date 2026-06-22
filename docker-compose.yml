@@ -2,12 +2,17 @@ version: '3.8'
 
 services:
   app:
-    build:
-      context: .
-      dockerfile: Dockerfile
+    image: node:22-alpine
     container_name: site-vitrine2
+    working_dir: /app
     ports:
       - "3000:3000"
+    volumes:
+      - .:/app
+      - /app/node_modules
+      - /app/.next
     environment:
-      - NODE_ENV=production
+      - NODE_ENV=development
+    # C'est cette ligne qui change :
+    command: sh -c "npm install && npm run dev"
     restart: unless-stopped
