@@ -1,7 +1,7 @@
 import { getTranslations,getLocale } from "next-intl/server";
 import Image from "next/image"
 import homeImg from "@public/bg_home.png"
-
+import BubbleCarousel from "@/components/Bulles";
 
 
 
@@ -25,6 +25,7 @@ export default async function Home({
           </p>
         ))}
       </div>
+  
     </div>
   );
 }

@@ -15,10 +15,10 @@ export default async function Navbar() {
     <header className="sticky top-0 z-50  border-b border-stone-200 hover:bg-stone-50">
       <div className="max-w-7xl mx-auto px-6 h-28 flex items-center justify-between">
         <nav className="hidden md:flex items-center gap-8">
-          <Link href={`/${locale}/presentation`} className="text-sm text-stone-500 hover:text-stone-900 transition-colors no-underline">
+          <Link href={`/${locale}/presentation`} className="text-md uppercase text-black hover:text-stone-900 transition-colors no-underline">
             {t("Company")}
           </Link>
-          <Link href={`/${locale}/temoignages`} className="text-sm text-stone-500 hover:text-stone-900 transition-colors no-underline">
+          <Link href={`/${locale}/temoignages`} className="text-md uppercase text-black hover:text-stone-900 transition-colors no-underline">
             {t("Testimonials")}
           </Link>
         </nav>
@@ -29,7 +29,7 @@ export default async function Navbar() {
         </Link>
         {/* Droite */}
         <div className="hidden md:flex items-center gap-6">
-          <Link href={`/${locale}/contact`} className="text-sm text-stone-500 hover:text-stone-900 transition-colors no-underline">
+          <Link href={`/${locale}/contact`} className="text-md uppercase text-black hover:text-stone-900 transition-colors no-underline">
             {t("Contact")}
           </Link>
 
@@ -41,7 +41,6 @@ export default async function Navbar() {
             <LanguageSwitcher />
           </div>
         </div>
-
       </div>
     </header>
   );
