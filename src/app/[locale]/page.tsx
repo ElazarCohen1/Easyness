@@ -16,20 +16,20 @@ export default async function Home({
 
   return (
     <>
-      <section className="fixed top-28 left-0 z-0 h-[calc(100vh-7rem)] w-full">     
+      <section className="relative inset-0 top-0 h-screen w-full z-0">     
         <div>
           {chairs.map((chair) => (
-          <Link
-            key={chair.id}
-            href={chair.href}
-            className="absolute bg-white z-10"
-            style={{
-              left: `${chair.x}%`,
-              top: `${chair.y}%`,
-              width: `${chair.width}%`,
-              height: `${chair.height}%`,
-            }}
-          />
+            <Link
+              key={chair.id}
+              href={chair.href}
+              className="absolute bg-white z-10"
+              style={{
+                left: `${chair.x}%`,
+                top: `${chair.y}%`,
+                width: `${chair.width}%`,
+                height: `${chair.height}%`,
+              }}
+            />
           ))}
         </div>
         <Image
@@ -49,7 +49,7 @@ export default async function Home({
 
       <section className="relative h-screen w-full mb-10 p-10 bg-linear-to-b from-stone-950 via-stone-300 to-stone-100">
         <div>
-          {/* <BubbleCarousel/> */}
+          <BubbleCarousel/>
         </div>
       </section>
     
