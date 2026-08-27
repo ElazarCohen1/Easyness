@@ -3,8 +3,8 @@ import Image from "next/image"
 import homeImg from "@public/bg_home.png"
 import BubbleCarousel from "@/components/Bulles";
 import ImageMeasure from "@/components/measure";
-import { chairs } from "@/data/chairs";
 import Link from "next/link";
+import Chairs from "@/components/Chairs";
 
 export default async function Home({
   params,
@@ -17,21 +17,8 @@ export default async function Home({
   return (
     <>
       <section className="relative inset-0 top-0 h-screen w-full z-0">     
-        <div>
-          {chairs.map((chair) => (
-            <Link
-              key={chair.id}
-              href={chair.href}
-              className="absolute bg-white z-10"
-              style={{
-                left: `${chair.x}%`,
-                top: `${chair.y}%`,
-                width: `${chair.width}%`,
-                height: `${chair.height}%`,
-              }}
-            />
-          ))}
-        </div>
+        <Chairs locale={locale}/>
+        
         <Image
           src={homeImg}
           alt="bg-home-section"
