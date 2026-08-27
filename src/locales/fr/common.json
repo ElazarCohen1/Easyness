@@ -1,11 +1,12 @@
 {
 
   "NavBar": {
-    "Company": "La société",
-    "Testimonials": "Témoignages",
-    "Contact": "Contact",
-    "Quote": "Obtenir un devis"
 
+    "Domains": "Domaines",
+    "Methods": "Méthodes",
+    "Testimony": "Temoignages",
+    "Contact" :"Contact",
+    "Company": "Société"
   },
   "Home":{
     "Welcome":"Bienvenue"

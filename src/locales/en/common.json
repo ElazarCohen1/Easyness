@@ -1,9 +1,12 @@
 {
-  "NavBar":{
-    "Company":"Company",
-    "Testimonials":"Testimonials",
-    "Contact":"Contact",
-    "Quote":"Get a quote"
+
+  "NavBar": {
+
+    "Domains": "Domains",
+    "Methods": "Methods",
+    "Testimony": "Testimonials",
+    "Contact" :"Contact",
+    "Company": "Company"
   },
   "Home":{
     "Welcome":"Welcome"
