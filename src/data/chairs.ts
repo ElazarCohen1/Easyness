@@ -9,6 +9,7 @@ export const chairs: Hotspot[] = [
     y: 45.55,
     width:11.069 ,
     height: 24.483,
+    description:'',
   },
   {
     id: "chair-2",
@@ -18,6 +19,7 @@ export const chairs: Hotspot[] = [
     y: 47.00,
     width: 10.107,
     height: 15.805,
+    description:'',    
   },
   {
     id: "chair-3",
@@ -27,6 +29,7 @@ export const chairs: Hotspot[] = [
     y: 47.82,
     width: 4.675,
     height: 11.880,
+    description:'',
   },
   {
     id: "chair-4",
@@ -36,6 +39,7 @@ export const chairs: Hotspot[] = [
     y: 47.52,
     width: 6.738,
     height: 17.665,
+    description:'', 
   },
   {
     id: "chair-5",
@@ -45,6 +49,7 @@ export const chairs: Hotspot[] = [
     y: 46.09,
     width: 10.182,
     height: 21.384,
+    description:'',
   },
   {
     id: "Table",
@@ -54,6 +59,7 @@ export const chairs: Hotspot[] = [
     y: 70.04,
     width: 10.00,
     height: 16.00,
+    description:'',
   },
 ];
 

@@ -6,4 +6,5 @@ export type Hotspot = {
   y: number;
   width: number;
   height: number;
+  description:string;
 };

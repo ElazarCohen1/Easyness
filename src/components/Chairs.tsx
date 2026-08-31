@@ -1,22 +1,27 @@
-import React from 'react'
 import { chairs } from "@/data/chairs";
-import Link from 'next/link';
-import Chair from './Chair';
+import Chair from "./Chair";
+import type { MotionValue } from "framer-motion";
 
-function Chairs(
-    {locale}:{locale:string}
-) {
+function Chairs({
+  locale,
+  scrollProgress,
+}: {
+  locale: string;
+  scrollProgress?: MotionValue<number>;
+}) {
   return (
-    <div className=''>
-        {chairs.map((chair) => (
-            <Chair 
-                key={chair.id}
-                chair={chair}
-                locale={locale}
-            />
-        ))}
+    <div>
+      {chairs.map((chair) => (
+        <Chair
+          key={chair.id}
+          chair={chair}
+          locale={locale}
+          fadeOnScroll={chair.id === "Table"}
+          scrollProgress={scrollProgress}
+        />
+      ))}
     </div>
-  )
+  );
 }
 
 export default Chairs;

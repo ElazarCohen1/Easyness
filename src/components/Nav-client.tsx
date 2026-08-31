@@ -1,9 +1,9 @@
 "use client";
 
-import Link from "next/link";
+import { Link } from "@/i18n/navigation";
 import LanguageSwitcher from "./lngSwitcher";
 import Image from "next/image";
-import logo from "@public/logo.png";
+import logo from "@public/logo2.png";
 import { useState, useEffect } from "react";
 
 type NavTranslations = {
@@ -15,10 +15,8 @@ type NavTranslations = {
 };
 
 export default function NavClient({
-  lng,
   translations,
 }: {
-  lng: string;
   translations: NavTranslations;
 }) {
   const [scrolled, setScrolled] = useState(false);
@@ -40,28 +38,28 @@ export default function NavClient({
       <div className="max-w-7xl mx-auto px-6 h-28 flex items-center justify-between">
         <nav className="hidden md:flex items-center gap-8">
           <Link
-            href={`/${lng}/domains`}
+            href="/domains"
             className="text-md uppercase text-black hover:text-stone-900 transition-colors no-underline"
           >
             {translations.domains}
           </Link>
 
           <Link
-            href={`/${lng}/methods`}
+            href="/methods"
             className="text-md uppercase text-black hover:text-stone-900 transition-colors no-underline"
           >
             {translations.methods}
           </Link>
 
           <Link
-            href={`/${lng}/testimony`}
+            href="/testimony"
             className="text-md uppercase text-black hover:text-stone-900 transition-colors no-underline"
           >
             {translations.testimony}
           </Link>
         </nav>
 
-        <Link href={`/${lng}`}>
+        <Link href="/">
           <Image
             src={logo}
             alt="logo easyness"
@@ -72,14 +70,14 @@ export default function NavClient({
 
         <div className="hidden md:flex items-center gap-6">
           <Link
-            href={`/${lng}/contact`}
+            href='/contact'
             className="text-md uppercase text-black hover:text-stone-900 transition-colors no-underline"
           >
             {translations.contact}
           </Link>
 
           <Link
-            href={`/${lng}/company`}
+            href='/company'
             className="text-md uppercase text-black hover:text-stone-900 transition-colors no-underline"
           >
             {translations.company}

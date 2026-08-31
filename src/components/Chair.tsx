@@ -2,20 +2,44 @@
 
 import { Hotspot } from "@/types/hotspot";
 import Link from "next/link";
-import { motion, AnimatePresence } from "framer-motion";
+import {
+  motion,
+  AnimatePresence,
+  MotionValue,
+  useMotionValue,
+  useTransform,
+} from "framer-motion";
 import { useState } from "react";
 
-function Chair({ chair, locale }: { chair: Hotspot; locale: string }) {
+function Chair({
+  chair,
+  locale,
+  fadeOnScroll = false,
+  scrollProgress,
+}: {
+  chair: Hotspot;
+  locale: string;
+  fadeOnScroll?: boolean;
+  scrollProgress?: MotionValue<number>;
+}) {
   const [hovered, setHovered] = useState(false);
 
+  const fallbackProgress = useMotionValue(0);
+  const progress = scrollProgress ?? fallbackProgress;
+
+  // Le point réel s'estompe dès le début du scroll : c'est le
+  // MergingOrb (rond fantôme) qui prend le relais visuellement.
+  const scrollOpacity = useTransform(progress, [0, 0.08], [1, 0]);
+
   return (
-    <div
+    <motion.div
       className="absolute z-10"
       style={{
         left: `${chair.x}%`,
         top: `${chair.y}%`,
         width: `${chair.width}%`,
         height: `${chair.height}%`,
+        opacity: fadeOnScroll ? scrollOpacity : 1,
       }}
     >
       {/* Zone cliquable pleine largeur */}
@@ -32,7 +56,6 @@ function Chair({ chair, locale }: { chair: Hotspot; locale: string }) {
         onMouseLeave={() => setHovered(false)}
       >
         <div className="relative flex items-center justify-center pointer-events-auto">
-
           {/* Anneau pointillé qui tourne doucement */}
           <motion.div
             className="absolute h-20 w-20 rounded-full border border-dashed border-[#c9b48a]/45"
@@ -47,9 +70,9 @@ function Chair({ chair, locale }: { chair: Hotspot; locale: string }) {
             transition={{ duration: 2.6, repeat: Infinity, ease: "easeInOut" }}
           />
 
-          {/* Point central */}
+          {/* Point central — dégradé champagne/brass */}
           <motion.div
-            className="relative h-8 w-8 rounded-full bg-linear-to-br from-[#2cd6f8] via-[#8398f5] to-[#1efbff] ring-1 ring-white/40 shadow-[0_0_16px_rgba(201,180,138,0.55)]"
+            className="relative h-8 w-8 rounded-full bg-linear-to-br from-[#f3e6c8] via-[#d9c290] to-[#a98c58] ring-1 ring-white/40 shadow-[0_0_16px_rgba(201,180,138,0.55)]"
             animate={{ scale: hovered ? 1.3 : 1 }}
             transition={{ type: "spring", stiffness: 320, damping: 22 }}
           />
@@ -85,7 +108,7 @@ function Chair({ chair, locale }: { chair: Hotspot; locale: string }) {
           </AnimatePresence>
         </div>
       </div>
-    </div>
+    </motion.div>
   );
 }
 

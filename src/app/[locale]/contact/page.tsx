@@ -1,41 +1,185 @@
 "use client";
 
+import { motion } from "framer-motion";
+import { Mail, Phone, Clock } from "lucide-react";
+
+
 
 export default function Contact() {
   return (
-    <div className="py-20 px-4 bg-slate-50 min-h-screen flex items-center justify-center">
-      <div className="bg-white w-full max-w-3xl p-10 rounded-3xl border border-slate-200 shadow-xl">
-        <h1 className="text-4xl font-black text-slate-900 mb-4">Contactez-nous</h1>
-        <p className="text-slate-500 mb-8">
-          Notre équipe vous répond sous 24 heures pour étudier vos besoins.
-        </p>
+    <div className="relative min-h-screen w-full overflow-hidden bg-white px-4 py-28 sm:py-36">
+      {/* Halo doré discret */}
+      <div
+        className="pointer-events-none absolute left-1/2 top-0 h-[500px] w-[900px] -translate-x-1/2 -translate-y-1/2 rounded-full opacity-25 blur-3xl"
+        style={{
+          background:
+            "radial-gradient(circle, rgba(169,140,88,0.3) 0%, transparent 70%)",
+        }}
+      />
 
-        <form className="space-y-6" onSubmit={(e) => e.preventDefault()}>
-          <div className="grid md:grid-cols-2 gap-6">
-            <div>
-              <label className="block text-sm font-semibold text-slate-700 mb-2">Prénom</label>
-              <input type="text" className="w-full px-4 py-3 rounded-xl border border-slate-300 focus:outline-none focus:ring-2 focus:ring-emerald-600 transition" placeholder="Jean" />
+      <div className="relative mx-auto max-w-5xl">
+        {/* Eyebrow + titre */}
+        <motion.div
+          initial={{ opacity: 0, y: 12 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true, margin: "-80px" }}
+          transition={{ duration: 0.6, ease: "easeOut" }}
+          className="mb-14 text-center"
+        >
+          <div className="mb-5 flex items-center justify-center gap-3">
+            <span className="h-px w-8 bg-linear-to-r from-transparent to-[#a98c58]" />
+            <span className="text-xs font-medium uppercase tracking-[0.25em] text-[#a98c58]">
+              Parlons de votre projet
+            </span>
+            <span className="h-px w-8 bg-linear-to-l from-transparent to-[#a98c58]" />
+          </div>
+
+          <h1 className="bg-linear-to-b from-[#a98c58] via-[#8a7345] to-[#6f5b37] bg-clip-text text-4xl font-semibold tracking-tight text-transparent sm:text-5xl">
+            Contactez-nous
+          </h1>
+
+          <p className="mx-auto mt-4 max-w-xl text-base leading-relaxed text-stone-500">
+            Notre équipe étudie votre situation avec attention et vous répond
+            sous 24 heures, avec le concours de notre réseau d&apos;avocats
+            partenaires si votre dossier le nécessite.
+          </p>
+        </motion.div>
+
+        <div className="grid gap-8 md:grid-cols-5">
+          {/* Formulaire */}
+          <motion.div
+            initial={{ opacity: 0, y: 16 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true, margin: "-80px" }}
+            transition={{ duration: 0.7, ease: "easeOut", delay: 0.1 }}
+            className="md:col-span-3"
+          >
+            <div className="rounded-3xl border border-[#a98c58]/20 bg-white p-8 shadow-[0_8px_40px_-12px_rgba(169,140,88,0.15)] sm:p-10">
+              <form className="space-y-6" onSubmit={(e) => e.preventDefault()}>
+                <div className="grid gap-6 sm:grid-cols-2">
+                  <div>
+                    <label className="mb-2 block text-xs font-semibold uppercase tracking-widest text-stone-500">
+                      Prénom
+                    </label>
+                    <input
+                      type="text"
+                      className="w-full rounded-xl border border-stone-200 bg-stone-50/50 px-4 py-3 text-stone-900 outline-none transition focus:border-[#a98c58]/50 focus:ring-2 focus:ring-[#a98c58]/20"
+                      placeholder="Jean"
+                    />
+                  </div>
+                  <div>
+                    <label className="mb-2 block text-xs font-semibold uppercase tracking-widest text-stone-500">
+                      Nom
+                    </label>
+                    <input
+                      type="text"
+                      className="w-full rounded-xl border border-stone-200 bg-stone-50/50 px-4 py-3 text-stone-900 outline-none transition focus:border-[#a98c58]/50 focus:ring-2 focus:ring-[#a98c58]/20"
+                      placeholder="Dupont"
+                    />
+                  </div>
+                </div>
+
+                <div>
+                  <label className="mb-2 block text-xs font-semibold uppercase tracking-widest text-stone-500">
+                    Email
+                  </label>
+                  <input
+                    type="email"
+                    className="w-full rounded-xl border border-stone-200 bg-stone-50/50 px-4 py-3 text-stone-900 outline-none transition focus:border-[#a98c58]/50 focus:ring-2 focus:ring-[#a98c58]/20"
+                    placeholder="jean.dupont@example.com"
+                  />
+                </div>
+
+                <div>
+                  <label className="mb-2 block text-xs font-semibold uppercase tracking-widest text-stone-500">
+                    Votre message
+                  </label>
+                  <textarea
+                    rows={5}
+                    className="w-full resize-none rounded-xl border border-stone-200 bg-stone-50/50 px-4 py-3 text-stone-900 outline-none transition focus:border-[#a98c58]/50 focus:ring-2 focus:ring-[#a98c58]/20"
+                    placeholder="Décrivez brièvement votre situation et vos besoins..."
+                  />
+                </div>
+
+                <button
+                  type="submit"
+                  className="group relative w-full overflow-hidden rounded-xl border border-[#a98c58]/50 bg-linear-to-b from-[#c9b48a] to-[#a98c58] py-4 text-sm font-semibold uppercase tracking-widest text-white shadow-sm transition-all duration-300 hover:shadow-md hover:brightness-105"
+                >
+                  Envoyer le message
+                </button>
+              </form>
             </div>
-            <div>
-              <label className="block text-sm font-semibold text-slate-700 mb-2">Nom</label>
-              <input type="text" className="w-full px-4 py-3 rounded-xl border border-slate-300 focus:outline-none focus:ring-2 focus:ring-emerald-600 transition" placeholder="Dupont" />
+          </motion.div>
+
+          {/* Panneau contact */}
+          <motion.div
+            initial={{ opacity: 0, y: 16 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true, margin: "-80px" }}
+            transition={{ duration: 0.7, ease: "easeOut", delay: 0.2 }}
+            className="md:col-span-2">
+              
+            <div className="flex h-full flex-col justify-between rounded-3xl border border-[#a98c58]/20 bg-stone-50/60 p-8">
+              <div className="space-y-8">
+                <div className="flex items-start gap-4">
+                  <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full border border-[#a98c58]/30 bg-white">
+                    <Mail size={16} className="text-[#a98c58]" />
+                  </div>
+                  <div>
+                    <p className="text-xs font-semibold uppercase tracking-widest text-stone-400">
+                      Email
+                    </p>
+                    <a
+                      href="mailto:contact@easyness.fr"
+                      className="mt-1 block text-sm text-stone-700 transition hover:text-[#a98c58]"
+                    >
+                      contact@easyness.fr
+                    </a>
+                  </div>
+                </div>
+
+                <div className="flex items-start gap-4">
+                  <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full border border-[#a98c58]/30 bg-white">
+                    <Phone size={16} className="text-[#a98c58]" />
+                  </div>
+                  <div>
+                    <p className="text-xs font-semibold uppercase tracking-widest text-stone-400">
+                      Téléphone
+                    </p>
+                      <a
+                      href="tel:+33123456789"
+                      className="mt-1 block text-sm text-stone-700 transition hover:text-[#a98c58]">
+                      +33 (0)1 23 45 67 89
+                    </a>
+                  </div>
+                </div>
+
+                <div className="flex items-start gap-4">
+                  <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full border border-[#a98c58]/30 bg-white">
+                    <Clock size={16} className="text-[#a98c58]" />
+                  </div>
+                  <div>
+                    <p className="text-xs font-semibold uppercase tracking-widest text-stone-400">
+                      Délai de réponse
+                    </p>
+                    <p className="mt-1 text-sm text-stone-700">
+                      Sous 24 heures ouvrées
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div className="mt-10 border-t border-[#a98c58]/15 pt-6">
+                <p className="text-sm leading-relaxed text-stone-500">
+                  Immobilier, succession, fiscalité ou conseil : chaque
+                  dossier est étudié individuellement, avec l&apos;appui de
+                  notre réseau d&apos;avocats partenaires si votre situation
+                  le requiert.
+                </p>
+              </div>
             </div>
-          </div>
-
-          <div>
-            <label className="block text-sm font-semibold text-slate-700 mb-2">Email</label>
-            <input type="email" className="w-full px-4 py-3 rounded-xl border border-slate-300 focus:outline-none focus:ring-2 focus:ring-emerald-600 transition" placeholder="jean.dupont@example.com" />
-          </div>
-
-          <div>
-            <label className="block text-sm font-semibold text-slate-700 mb-2">Votre message</label>
-            <textarea rows={5} className="w-full px-4 py-3 rounded-xl border border-slate-300 focus:outline-none focus:ring-2 focus:ring-emerald-600 transition" placeholder="Décrivez brièvement votre résidence et vos besoins..."></textarea>
-          </div>
-
-          <button type="submit" className="w-full bg-emerald-600 text-white py-4 rounded-xl font-bold hover:bg-emerald-700 transition shadow-sm">
-            Envoyer le message
-          </button>
-        </form>
+          </motion.div>
+        </div>
       </div>
     </div>
   );

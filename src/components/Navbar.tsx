@@ -15,7 +15,6 @@ export default async function Navbar() {
   return (
     <div>
       <NavClient 
-      lng={locale} 
       translations={{
         domains: t("Domains"),
         methods: t("Methods"),
