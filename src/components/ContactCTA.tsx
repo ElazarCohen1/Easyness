@@ -3,6 +3,7 @@
 import { Link } from "@/i18n/navigation";
 import { motion } from "framer-motion";
 import { ArrowUpRight } from "lucide-react";
+import { useTranslations } from "next-intl";
 
 export default function ContactCTA({
   withBackground = true,
@@ -11,6 +12,7 @@ export default function ContactCTA({
   withBackground?: boolean;
   variant?: "dark" | "light";
 }) {
+  const t = useTranslations("ContactCTA");
   const isLight = variant === "light";
 
   return (
@@ -44,7 +46,7 @@ export default function ContactCTA({
         >
           <span className="h-px w-8 bg-linear-to-r from-transparent to-[#a98c58]" />
           <span className="text-xs font-medium uppercase tracking-[0.25em] text-[#a98c58]">
-            Parlons de votre projet
+            {t("Eyebrow")}
           </span>
           <span className="h-px w-8 bg-linear-to-l from-transparent to-[#a98c58]" />
         </motion.div>
@@ -60,7 +62,7 @@ export default function ContactCTA({
               : "bg-linear-to-b from-[#f3e6c8] via-[#d9c290] to-[#a98c58] bg-clip-text text-transparent"
           }`}
         >
-          Contactez-nous
+          {t("Title")}
         </motion.h2>
 
         <motion.p
@@ -72,9 +74,7 @@ export default function ContactCTA({
             isLight ? "text-stone-600" : "text-stone-400"
           }`}
         >
-          Chaque démarche mérite une écoute attentive et une réponse sur
-          mesure. Notre équipe étudie votre situation et vous accompagne, avec
-          le concours de notre réseau d&apos;avocats partenaires si besoin.
+          {t("Description")}
         </motion.p>
 
         <motion.div
@@ -100,7 +100,7 @@ export default function ContactCTA({
                   : "linear-gradient(120deg, rgba(201,180,138,0.15), rgba(243,230,200,0.08))",
               }}
             />
-            <span>Nous contacter</span>
+            <span>{t("Button")}</span>
             <ArrowUpRight
               size={16}
               className="transition-transform duration-300 group-hover:translate-x-0.5 group-hover:-translate-y-0.5"

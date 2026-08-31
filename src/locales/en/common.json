@@ -1,14 +1,116 @@
 {
-
   "NavBar": {
-
     "Domains": "Domains",
     "Methods": "Methods",
     "Testimony": "Testimonials",
-    "Contact" :"Contact",
+    "Contact": "Contact",
     "Company": "Company"
   },
-  "Home":{
-    "Welcome":"Welcome"
-  }
+
+  "Home": {
+    "Welcome": "Welcome",
+    "Hero": {
+      "Eyebrow": "Our areas of expertise",
+      "TitleLine1": "Tailored support,",
+      "TitleLine2": "whatever your needs"
+    },
+    "Bubbles": {
+      "Administrative": "Administrative",
+      "RealEstate": "Real Estate",
+      "Succession": "Succession",
+      "Fiscal": "Taxation",
+      "Advisory": "Advisory"
+    }
+  },
+
+  "ContactCTA": {
+    "Eyebrow": "Let's talk about your project",
+    "Title": "Contact us",
+    "Description": "Every procedure deserves careful attention and a tailored response. Our team reviews your situation and supports you, with the help of our partner network of lawyers if needed.",
+    "Button": "Get in touch"
+  },
+
+  "Contact": {
+    "Eyebrow": "Let's talk about your project",
+    "Title": "Contact us",
+    "Subtitle": "Our team reviews your situation carefully and responds within 24 hours, with the support of our partner network of lawyers if your case requires it.",
+    "Form": {
+      "FirstNameLabel": "First name",
+      "FirstNamePlaceholder": "John",
+      "LastNameLabel": "Last name",
+      "LastNamePlaceholder": "Smith",
+      "EmailLabel": "Email",
+      "EmailPlaceholder": "john.smith@example.com",
+      "MessageLabel": "Your message",
+      "MessagePlaceholder": "Briefly describe your situation and your needs...",
+      "Submit": "Send message"
+    },
+    "Info": {
+      "EmailLabel": "Email",
+      "Email": "contact@easyness.fr",
+      "PhoneLabel": "Phone",
+      "Phone": "+33 (0)1 23 45 67 89",
+      "ResponseTimeLabel": "Response time",
+      "ResponseTime": "Within 24 business hours",
+      "Note": "Real estate, succession, tax, or advisory matters: every case is reviewed individually, with the support of our partner network of lawyers if your situation requires it."
+    }
+  },
+
+  "Footer": {
+    "CompanyName": "SecurHome",
+    "Tagline": "Your trusted partner for the care, upkeep, and cleaning of second homes across France.",
+    "ContactTitle": "Contact",
+    "EmailLabel": "Email",
+    "Email": "contact@securhome.fr",
+    "PhoneLabel": "Phone",
+    "Phone": "+33 (0)1 23 45 67 89",
+    "Copyright": "© 2026 SecurHome. All rights reserved.",
+    "LegalLink": "Legal notice and Cookies"
+  },
+
+  "Legal": {
+    "Title": "Legal Notice & Cookies",
+    "Intro": "In accordance with the provisions of French law no. 2004-575 of 21 June 2004 on confidence in the digital economy, users of the SecurHome website are informed of the identity of the various parties involved in its creation and maintenance.",
+    "Section1": {
+      "Title": "1. Website publisher",
+      "Text": "The SecurHome website is published by SecurHome SAS, with share capital of €50,000, whose registered office is located in Paris, France. Registered with the Paris Trade and Companies Register under number 123 456 789 RCS Paris."
+    },
+    "Section2": {
+      "Title": "2. Hosting",
+      "Text": "The site is hosted by Vercel Inc., 340 S Lemon Ave #4133, Walnut, CA 91789, United States."
+    },
+    "Section3": {
+      "Title": "3. Cookie policy",
+      "Text": "This site uses cookies to improve your user experience and to measure audience statistics. By continuing to browse this site, you accept the use of these cookies."
+    }
+  },
+
+  "Testimony": {
+    "Title": "Testimonials",
+    "Subtitle": "Discover why hundreds of homeowners trust us.",
+    "Reviews": [
+      {
+        "Name": "Sophie L.",
+        "Location": "Property in Deauville",
+        "Text": "We chose the Premium package for our house in Normandy. The team is very discreet and professional, and the house is always spotless when we arrive."
+      },
+      {
+        "Name": "Marc R.",
+        "Location": "Property in Nice",
+        "Text": "An essential caretaking service when you live far away. The photo reports are reassuring and the cleaning is done extremely well."
+      }
+    ]
+  },
+
+  "Presentation": {
+    "Title": "The Company",
+    "Paragraph1": "Founded in France by real estate and wealth management enthusiasts, SecurHome was born from a simple observation: a second home needs presence, attention, and upkeep during its owners' long absences.",
+    "Paragraph2": "We operate throughout France to guarantee the security and cleanliness of your property. Our experts carry out regular rounds, check insulation and equipment are working properly, and perform thorough cleaning before your return.",
+    "Paragraph3": "Our values are built on trust, discretion, and excellence. Every agent is trained and certified to ensure the highest possible quality of service.",
+    "CtaButton": "Get an estimate"
+  },
+
+  "Domains": {},
+  "Methods": {},
+  "Company": {}
 }

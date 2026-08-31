@@ -1,9 +1,6 @@
 // src/components/Navbar.tsx
-import Link from "next/link";
-import LanguageSwitcher from "./lngSwitcher";
 import { getTranslations, getLocale } from "next-intl/server";
-import Image from "next/image";
-import logo from '@public/logo.png'
+
 import NavClient from "./Nav-client";
 
 export default async function Navbar() {

@@ -1,40 +1,40 @@
-export const metadata = {
-  title: "Témoignages | SecurHome",
-  description: "Ce que nos clients disent de nous.",
-};
+import { getTranslations } from "next-intl/server";
 
-export default function Temoignages() {
-  const reviews = [
-    {
-      name: "Sophie L.",
-      location: "Résidence à Deauville",
-      text: "Nous avons choisi le forfait Premium pour notre maison en Normandie. L'équipe est très discrète et professionnelle, la maison est toujours impeccable à notre arrivée.",
-    },
-    {
-      name: "Marc R.",
-      location: "Résidence à Nice",
-      text: "Un service de gardiennage indispensable quand on habite loin. Les rapports photos sont rassurants et le ménage est extrêmement bien fait.",
-    },
-  ];
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ locale: string }>;
+}) {
+  const { locale } = await params;
+  const t = await getTranslations({ locale, namespace: "Testimony" });
+  return { title: t("Title") };
+}
+
+type Review = { Name: string; Location: string; Text: string };
+
+export default async function Temoignages({
+  params,
+}: {
+  params: Promise<{ locale: string }>;
+}) {
+  const { locale } = await params;
+  const t = await getTranslations({ locale, namespace: "Testimony" });
+  const reviews = t.raw("Reviews") as Review[];
 
   return (
     <div className="py-20 px-4 bg-slate-50 min-h-screen">
       <div className="max-w-6xl mx-auto">
-        <h1 className="text-5xl font-black text-slate-900 mb-4">Témoignages</h1>
-        <p className="text-slate-500 mb-12 text-lg">Découvrez pourquoi des centaines de propriétaires nous font confiance.</p>
+        <h1 className="text-5xl font-black text-slate-900 mb-4">{t("Title")}</h1>
+        <p className="text-slate-500 mb-12 text-lg">{t("Subtitle")}</p>
 
         <div className="grid md:grid-cols-2 gap-8">
           {reviews.map((rev, idx) => (
             <div key={idx} className="bg-white p-8 rounded-3xl border border-slate-200 shadow-sm">
-              <div className="flex items-center mb-4 text-emerald-500">
-                ★★★★★
-              </div>
-              <p className="text-slate-600 italic mb-6 leading-relaxed">
-                "{rev.text}"
-              </p>
+              <div className="flex items-center mb-4 text-emerald-500">★★★★★</div>
+              <p className="text-slate-600 italic mb-6 leading-relaxed">&quot;{rev.Text}&quot;</p>
               <div>
-                <p className="font-bold text-slate-900">{rev.name}</p>
-                <p className="text-sm text-slate-400">{rev.location}</p>
+                <p className="font-bold text-slate-900">{rev.Name}</p>
+                <p className="text-sm text-slate-400">{rev.Location}</p>
               </div>
             </div>
           ))}

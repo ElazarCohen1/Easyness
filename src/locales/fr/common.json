@@ -1,14 +1,116 @@
 {
-
   "NavBar": {
-
     "Domains": "Domaines",
     "Methods": "Méthodes",
-    "Testimony": "Temoignages",
-    "Contact" :"Contact",
+    "Testimony": "Témoignages",
+    "Contact": "Contact",
     "Company": "Société"
   },
-  "Home":{
-    "Welcome":"Bienvenue"
-  }
+
+  "Home": {
+    "Welcome": "Bienvenue",
+    "Hero": {
+      "Eyebrow": "Nos domaines d'intervention",
+      "TitleLine1": "Un accompagnement sur-mesure,",
+      "TitleLine2": "quel que soit votre besoin"
+    },
+    "Bubbles": {
+      "Administrative": "Administratif",
+      "RealEstate": "Immobilier",
+      "Succession": "Succession",
+      "Fiscal": "Fiscalité",
+      "Advisory": "Conseil"
+    }
+  },
+
+  "ContactCTA": {
+    "Eyebrow": "Parlons de votre projet",
+    "Title": "Contactez-nous",
+    "Description": "Chaque démarche mérite une écoute attentive et une réponse sur mesure. Notre équipe étudie votre situation et vous accompagne, avec le concours de notre réseau d'avocats partenaires si besoin.",
+    "Button": "Nous contacter"
+  },
+
+  "Contact": {
+    "Eyebrow": "Parlons de votre projet",
+    "Title": "Contactez-nous",
+    "Subtitle": "Notre équipe étudie votre situation avec attention et vous répond sous 24 heures, avec le concours de notre réseau d'avocats partenaires si votre dossier le nécessite.",
+    "Form": {
+      "FirstNameLabel": "Prénom",
+      "FirstNamePlaceholder": "Jean",
+      "LastNameLabel": "Nom",
+      "LastNamePlaceholder": "Dupont",
+      "EmailLabel": "Email",
+      "EmailPlaceholder": "jean.dupont@example.com",
+      "MessageLabel": "Votre message",
+      "MessagePlaceholder": "Décrivez brièvement votre situation et vos besoins...",
+      "Submit": "Envoyer le message"
+    },
+    "Info": {
+      "EmailLabel": "Email",
+      "Email": "contact@easyness.fr",
+      "PhoneLabel": "Téléphone",
+      "Phone": "+33 (0)1 23 45 67 89",
+      "ResponseTimeLabel": "Délai de réponse",
+      "ResponseTime": "Sous 24 heures ouvrées",
+      "Note": "Immobilier, succession, fiscalité ou conseil : chaque dossier est étudié individuellement, avec l'appui de notre réseau d'avocats partenaires si votre situation le requiert."
+    }
+  },
+
+  "Footer": {
+    "CompanyName": "SecurHome",
+    "Tagline": "Votre partenaire de confiance pour la garde, l'entretien et le nettoyage de résidences secondaires en France.",
+    "ContactTitle": "Contact",
+    "EmailLabel": "Email",
+    "Email": "contact@securhome.fr",
+    "PhoneLabel": "Téléphone",
+    "Phone": "+33 (0)1 23 45 67 89",
+    "Copyright": "© 2026 SecurHome. Tous droits réservés.",
+    "LegalLink": "Mentions légales et Cookies"
+  },
+
+  "Legal": {
+    "Title": "Mentions Légales & Cookies",
+    "Intro": "Conformément aux dispositions de la loi n° 2004-575 du 21 juin 2004 pour la confiance en l'économie numérique, il est précisé aux utilisateurs du site SecurHome l'identité des différents intervenants dans le cadre de sa réalisation et de son suivi.",
+    "Section1": {
+      "Title": "1. Édition du site",
+      "Text": "Le site SecurHome est édité par la société SecurHome SAS, au capital social de 50 000 €, dont le siège social est situé à Paris, France. Immatriculée au Registre du Commerce et des Sociétés sous le numéro 123 456 789 RCS Paris."
+    },
+    "Section2": {
+      "Title": "2. Hébergement",
+      "Text": "Le site est hébergé par Vercel Inc., 340 S Lemon Ave #4133, Walnut, CA 91789, États-Unis."
+    },
+    "Section3": {
+      "Title": "3. Politique de Cookies",
+      "Text": "Le site utilise des cookies pour améliorer votre expérience utilisateur et réaliser des mesures statistiques de fréquentation. En poursuivant votre navigation sur ce site, vous acceptez l'utilisation de ces cookies."
+    }
+  },
+
+  "Testimony": {
+    "Title": "Témoignages",
+    "Subtitle": "Découvrez pourquoi des centaines de propriétaires nous font confiance.",
+    "Reviews": [
+      {
+        "Name": "Sophie L.",
+        "Location": "Résidence à Deauville",
+        "Text": "Nous avons choisi le forfait Premium pour notre maison en Normandie. L'équipe est très discrète et professionnelle, la maison est toujours impeccable à notre arrivée."
+      },
+      {
+        "Name": "Marc R.",
+        "Location": "Résidence à Nice",
+        "Text": "Un service de gardiennage indispensable quand on habite loin. Les rapports photos sont rassurants et le ménage est extrêmement bien fait."
+      }
+    ]
+  },
+
+  "Presentation": {
+    "Title": "La Société",
+    "Paragraph1": "Créée en France par des passionnés de l'immobilier et de la gestion de patrimoine, SecurHome est née d'un constat simple : une résidence secondaire a besoin de présence, d'attention et d'entretien durant les longues périodes d'absence de ses propriétaires.",
+    "Paragraph2": "Nous intervenons partout en France pour garantir la sécurité et la propreté de votre bien. Nos experts réalisent des rondes régulières, s'assurent de la bonne isolation et du fonctionnement des installations, et effectuent des ménages complets avant votre retour.",
+    "Paragraph3": "Nos valeurs reposent sur la confiance, la discrétion et l'excellence. Chaque agent est formé et certifié pour assurer la plus grande qualité de service possible.",
+    "CtaButton": "Obtenir une estimation"
+  },
+
+  "Domains": {},
+  "Methods": {},
+  "Company": {}
 }

@@ -1,11 +1,7 @@
 "use client";
-import { useRef, useState,useEffect } from "react";
-import {
-  motion,
-  useMotionValue,
-  useTransform,
-  animate,
-} from "framer-motion";
+import { useRef, useState, useEffect } from "react";
+import { motion, useMotionValue, useTransform, animate } from "framer-motion";
+import { useTranslations } from "next-intl";
 
 import {
   FileText,
@@ -15,10 +11,6 @@ import {
   MessageCircle,
   type LucideIcon,
 } from "lucide-react";
-
-// ---------------------------------------------------------------------------
-// CONFIGURATION
-// ---------------------------------------------------------------------------
 
 const SPACING = 400;
 const BUBBLE_SIZE = 200;
@@ -31,30 +23,24 @@ const FOCUS_RANGE = 1.2;
 
 const DRAG_SENSITIVITY = 1 / SPACING;
 
-const BUBBLES: { label: string; icon: LucideIcon }[] = [
-  { label: "Administratif", icon: FileText },
-  { label: "Immobilier", icon: HomeIcon },
-  { label: "Succession", icon: ScrollText },
-  { label: "Fiscalité", icon: Landmark },
-  { label: "Conseil", icon: MessageCircle },
+// Clés correspondant à Home.Bubbles.* dans common.json
+const BUBBLES: { key: string; icon: LucideIcon }[] = [
+  { key: "Administrative", icon: FileText },
+  { key: "RealEstate", icon: HomeIcon },
+  { key: "Succession", icon: ScrollText },
+  { key: "Fiscal", icon: Landmark },
+  { key: "Advisory", icon: MessageCircle },
 ];
 
 const N = BUBBLES.length;
-
-// ---------------------------------------------------------------------------
-// UTILS
-// ---------------------------------------------------------------------------
 
 function wrapSlot(slot: number) {
   const half = N / 2;
   return (((slot + half) % N + N) % N) - half;
 }
 
-// ---------------------------------------------------------------------------
-// CAROUSEL
-// ---------------------------------------------------------------------------
-
 export default function ArcBubbleCarousel() {
+  const t = useTranslations("Home.Bubbles");
   const progress = useMotionValue(0);
   const [mounted, setMounted] = useState(false);
 
@@ -110,10 +96,10 @@ export default function ArcBubbleCarousel() {
       >
         {BUBBLES.map((bubble, index) => (
           <Bubble
-            key={bubble.label}
+            key={bubble.key}
             progress={progress}
             index={index}
-            label={bubble.label}
+            label={t(bubble.key)}
             Icon={bubble.icon}
           />
         ))}
@@ -121,10 +107,6 @@ export default function ArcBubbleCarousel() {
     </div>
   );
 }
-
-// ---------------------------------------------------------------------------
-// BUBBLE
-// ---------------------------------------------------------------------------
 
 function Bubble({
   progress,
@@ -137,24 +119,19 @@ function Bubble({
   label: string;
   Icon: LucideIcon;
 }) {
-  const [mounted,setMounted] = useState(false);
+  const [mounted, setMounted] = useState(false);
   const slot = useTransform(progress, (p) => wrapSlot(index - p));
 
   const x = useTransform(slot, (s) => s * SPACING);
 
-  const normalized = useTransform(slot, (s) =>
-    Math.min(1, Math.abs(s) / FOCUS_RANGE)
-  );
+  const normalized = useTransform(slot, (s) => Math.min(1, Math.abs(s) / FOCUS_RANGE));
 
   const scale = useTransform(
     normalized,
     (distance) => MIN_SCALE + (MAX_SCALE - MIN_SCALE) * (1 - distance)
   );
 
-  const y = useTransform(
-    normalized,
-    (distance) => -Math.pow(distance, 1.7) * ARC_HEIGHT
-  );
+  const y = useTransform(normalized, (distance) => -Math.pow(distance, 1.7) * ARC_HEIGHT);
 
   const opacity = useTransform(normalized, (distance) => {
     if (distance >= 1) return 0;
@@ -166,9 +143,7 @@ function Bubble({
     return clamped * -4;
   });
 
-  const pointerEvents = useTransform(opacity, (value) =>
-    value < 0.1 ? "none" : "auto"
-  );
+  const pointerEvents = useTransform(opacity, (value) => (value < 0.1 ? "none" : "auto"));
 
   useEffect(() => {
     setMounted(true);
