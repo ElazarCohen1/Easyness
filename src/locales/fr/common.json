@@ -110,7 +110,105 @@
     "CtaButton": "Obtenir une estimation"
   },
 
-  "Domains": {},
+  "Domains": {
+    "PageEyebrow": "Nos domaines d'intervention",
+    "PageTitle": "Nos Domaines",
+    "PageSubtitle": "Un accompagnement complet, quel que soit votre besoin. Découvrez comment nous pouvons vous aider.",
+    "DiscoverLabel": "Découvrir",
+    "DetailEyebrow": "Domaine d'expertise",
+    "ServicesLabel": "Ce que nous faisons",
+    "BackLink": "Retour aux domaines",
+    "Items": {
+      "juridique": {
+        "Title": "Juridique",
+        "Intro": "Un accompagnement juridique clair pour sécuriser toutes vos démarches.",
+        "Description": "Nous vous aidons à comprendre et à mener à bien vos démarches juridiques, qu'il s'agisse de contrats, de litiges ou de formalités administratives. Notre réseau d'avocats partenaires intervient dès que votre dossier nécessite une expertise spécifique.",
+        "Services": [
+          "Analyse et rédaction de documents contractuels",
+          "Accompagnement dans vos démarches administratives",
+          "Mise en relation avec un avocat partenaire si nécessaire",
+          "Suivi personnalisé de votre dossier"
+        ]
+      },
+      "fiscal": {
+        "Title": "Fiscalité",
+        "Intro": "Optimisez et sécurisez votre situation fiscale en toute sérénité.",
+        "Description": "De la déclaration de revenus aux situations fiscales plus complexes, nous vous accompagnons pour comprendre vos obligations et optimiser votre fiscalité dans le respect de la réglementation en vigueur.",
+        "Services": [
+          "Déclarations fiscales et suivi administratif",
+          "Optimisation de votre situation fiscale",
+          "Accompagnement en cas de contrôle fiscal",
+          "Conseils personnalisés selon votre profil"
+        ]
+      },
+      "comptable": {
+        "Title": "Comptabilité",
+        "Intro": "Une gestion comptable rigoureuse pour vous simplifier le quotidien.",
+        "Description": "Nous prenons en charge le suivi de vos comptes, la préparation de vos documents comptables et vous orientons vers les bons interlocuteurs pour une gestion saine et transparente de votre activité ou de votre patrimoine.",
+        "Services": [
+          "Suivi et organisation de vos documents comptables",
+          "Préparation des éléments pour votre expert-comptable",
+          "Aide à la mise en place d'outils de suivi",
+          "Accompagnement dans vos démarches comptables"
+        ]
+      },
+      "financier": {
+        "Title": "Financier",
+        "Intro": "Des conseils financiers adaptés pour construire vos projets sereinement.",
+        "Description": "Que ce soit pour un financement, un investissement ou une réorganisation de vos finances, nous vous aidons à y voir clair et à prendre les meilleures décisions pour votre situation.",
+        "Services": [
+          "Analyse de votre situation financière",
+          "Accompagnement dans vos demandes de financement",
+          "Aide à la structuration de vos investissements",
+          "Mise en relation avec des partenaires financiers"
+        ]
+      },
+      "commercial": {
+        "Title": "Commercial",
+        "Intro": "Un accompagnement sur vos démarches commerciales et contractuelles.",
+        "Description": "Nous vous accompagnons dans la structuration et le suivi de vos relations commerciales, la rédaction de vos contrats et la gestion des démarches liées à votre activité.",
+        "Services": [
+          "Rédaction et relecture de contrats commerciaux",
+          "Accompagnement dans vos négociations",
+          "Suivi de vos démarches administratives commerciales",
+          "Conseils adaptés à votre secteur d'activité"
+        ]
+      },
+      "patrimonial": {
+        "Title": "Patrimoniale",
+        "Intro": "Protégez et transmettez votre patrimoine en toute confiance.",
+        "Description": "Succession, transmission, organisation patrimoniale : nous vous accompagnons à chaque étape pour protéger vos biens et préparer sereinement l'avenir de votre famille.",
+        "Services": [
+          "Accompagnement dans les démarches de succession",
+          "Conseils en organisation et transmission patrimoniale",
+          "Aide à la constitution de votre dossier",
+          "Coordination avec notaires et avocats partenaires"
+        ]
+      },
+      "bancaire": {
+        "Title": "Bancaire",
+        "Intro": "Un appui concret pour vos démarches bancaires.",
+        "Description": "Ouverture de compte, financement, relation avec votre établissement bancaire : nous vous accompagnons pour simplifier vos échanges et défendre au mieux vos intérêts.",
+        "Services": [
+          "Accompagnement dans vos démarches bancaires",
+          "Aide à la constitution de dossiers de financement",
+          "Médiation avec votre établissement bancaire",
+          "Suivi personnalisé de votre dossier"
+        ]
+      },
+      "immobilier": {
+        "Title": "Projet Immobilier & Locatif",
+        "Intro": "Un accompagnement complet pour vos projets immobiliers et locatifs.",
+        "Description": "Achat, vente, location ou gestion locative : nous vous accompagnons à chaque étape de votre projet immobilier, avec un suivi administratif rigoureux et personnalisé.",
+        "Services": [
+          "Accompagnement dans vos démarches d'achat ou de vente",
+          "Gestion des dossiers de location",
+          "Suivi administratif de votre projet immobilier",
+          "Conseils adaptés à votre situation"
+        ]
+      }
+    }
+  },
   "Methods": {},
   "Company": {}
 }

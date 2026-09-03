@@ -111,7 +111,105 @@
     "CtaButton": "Get an estimate"
   },
 
-  "Domains": {},
+  "Domains": {
+    "PageEyebrow": "Our areas of expertise",
+    "PageTitle": "Our Domains",
+    "PageSubtitle": "Comprehensive support, whatever your need. Discover how we can help you.",
+    "DiscoverLabel": "Discover",
+    "DetailEyebrow": "Area of expertise",
+    "ServicesLabel": "What we do",
+    "BackLink": "Back to domains",
+    "Items": {
+      "juridique": {
+        "Title": "Legal",
+        "Intro": "Clear legal support to safeguard every step of your procedures.",
+        "Description": "We help you understand and carry out your legal procedures, whether related to contracts, disputes or administrative formalities. Our partner network of lawyers steps in whenever your case requires specific expertise.",
+        "Services": [
+          "Review and drafting of contractual documents",
+          "Support with your administrative procedures",
+          "Introduction to a partner lawyer when needed",
+          "Personalised follow-up of your case"
+        ]
+      },
+      "fiscal": {
+        "Title": "Taxation",
+        "Intro": "Optimise and secure your tax situation with peace of mind.",
+        "Description": "From income tax returns to more complex tax situations, we help you understand your obligations and optimise your taxation in full compliance with current regulations.",
+        "Services": [
+          "Tax returns and administrative follow-up",
+          "Optimisation of your tax situation",
+          "Support in the event of a tax audit",
+          "Personalised advice based on your profile"
+        ]
+      },
+      "comptable": {
+        "Title": "Accounting",
+        "Intro": "Rigorous accounting management to simplify your daily life.",
+        "Description": "We take care of tracking your accounts, preparing your accounting documents, and directing you to the right contacts for sound, transparent management of your activity or assets.",
+        "Services": [
+          "Tracking and organising your accounting documents",
+          "Preparing information for your accountant",
+          "Help setting up tracking tools",
+          "Support with your accounting procedures"
+        ]
+      },
+      "financier": {
+        "Title": "Financial",
+        "Intro": "Tailored financial advice to build your projects with confidence.",
+        "Description": "Whether for financing, investment, or reorganising your finances, we help you gain clarity and make the best decisions for your situation.",
+        "Services": [
+          "Analysis of your financial situation",
+          "Support with financing applications",
+          "Help structuring your investments",
+          "Introduction to financial partners"
+        ]
+      },
+      "commercial": {
+        "Title": "Commercial",
+        "Intro": "Support with your commercial and contractual procedures.",
+        "Description": "We support you in structuring and managing your business relationships, drafting your contracts, and handling the procedures related to your activity.",
+        "Services": [
+          "Drafting and reviewing commercial contracts",
+          "Support during negotiations",
+          "Follow-up of your commercial administrative procedures",
+          "Advice tailored to your sector"
+        ]
+      },
+      "patrimonial": {
+        "Title": "Estate Planning",
+        "Intro": "Protect and pass on your assets with complete confidence.",
+        "Description": "Succession, transfer, estate organisation: we support you every step of the way to protect your assets and prepare calmly for your family's future.",
+        "Services": [
+          "Support with succession procedures",
+          "Advice on estate organisation and transfer",
+          "Help preparing your file",
+          "Coordination with partner notaries and lawyers"
+        ]
+      },
+      "bancaire": {
+        "Title": "Banking",
+        "Intro": "Concrete support for your banking procedures.",
+        "Description": "Account opening, financing, relations with your bank: we help simplify your exchanges and best defend your interests.",
+        "Services": [
+          "Support with your banking procedures",
+          "Help preparing financing applications",
+          "Mediation with your bank",
+          "Personalised follow-up of your file"
+        ]
+      },
+      "immobilier": {
+        "Title": "Property & Rental Projects",
+        "Intro": "Complete support for your property and rental projects.",
+        "Description": "Buying, selling, renting or managing a rental property: we support you at every stage of your property project, with rigorous and personalised administrative follow-up.",
+        "Services": [
+          "Support with buying or selling procedures",
+          "Management of rental files",
+          "Administrative follow-up of your property project",
+          "Advice tailored to your situation"
+        ]
+      }
+    }
+  },
   "Methods": {},
   "Company": {}
 }
