@@ -14,10 +14,11 @@ export default async function Navbar() {
       <NavClient 
       translations={{
         domains: t("Domains"),
-        methods: t("Methods"),
         testimony: t("Testimony"),
         contact: t("Contact"),
         company: t("Company"),
+        vip: ("vip"),
+
       }}/>
     </div>
   );

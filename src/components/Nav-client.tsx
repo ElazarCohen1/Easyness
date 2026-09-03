@@ -8,10 +8,10 @@ import { useState, useEffect } from "react";
 
 type NavTranslations = {
   domains: string;
-  methods: string;
   testimony: string;
   contact: string;
   company: string;
+  vip:string;
 };
 
 export default function NavClient({
@@ -45,13 +45,6 @@ export default function NavClient({
           </Link>
 
           <Link
-            href="/methods"
-            className="text-md uppercase text-black hover:text-stone-900 transition-colors no-underline"
-          >
-            {translations.methods}
-          </Link>
-
-          <Link
             href="/testimony"
             className="text-md uppercase text-black hover:text-stone-900 transition-colors no-underline"
           >
@@ -81,6 +74,13 @@ export default function NavClient({
             className="text-md uppercase text-black hover:text-stone-900 transition-colors no-underline"
           >
             {translations.company}
+          </Link>
+
+          <Link
+            href='/vip'
+            className="text-md uppercase text-black hover:text-stone-900 transition-colors no-underline"
+          >
+            {translations.vip}
           </Link>
 
           <div className="flex items-center gap-1.5 pl-5 border-l border-stone-200">

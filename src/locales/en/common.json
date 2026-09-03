@@ -1,10 +1,11 @@
 {
   "NavBar": {
     "Domains": "Domains",
-    "Methods": "Methods",
-    "Testimony": "Testimonials",
+    "Testimony": "Legal Sheet",
     "Contact": "Contact",
-    "Company": "Company"
+    "Company": "Our expertise",
+    "vip": "V.I.P"
+
   },
 
   "Home": {
