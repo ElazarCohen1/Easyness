@@ -1,6 +1,7 @@
 import { Link } from "@/i18n/navigation";
 import { getTranslations } from "next-intl/server";
 import { Mail, Phone, Clock } from "lucide-react";
+import packageJson from "@/../package.json";
 
 export default async function Footer() {
   const t = await getTranslations("Footer");
@@ -14,6 +15,7 @@ export default async function Footer() {
     { href: "/company", label: nav("Company") },
     { href: "/contact", label: nav("Contact") },
   ];
+  const version = packageJson.version;
 
   return (
     <footer className="relative w-full overflow-hidden bg-stone-950">
@@ -104,18 +106,26 @@ export default async function Footer() {
 
         {/* Barre du bas */}
         <div className="mt-14 flex flex-col items-center gap-4 border-t border-[#a98c58]/15 pt-8 text-center sm:flex-row sm:justify-between sm:text-left">
-          <p className="text-xs text-stone-500">
-            {t("Copyright", { year })}
-          </p>
+          <div className="order-2 flex items-center gap-3 sm:order-1">
+            <p className="text-xs text-stone-500">
+              {t("Copyright", { year })}
+            </p>
+            <span className="h-3 w-px bg-[#a98c58]/20" />
+            <p className="font-mono text-[11px] tracking-wide text-stone-600">
+              v{version}
+            </p>
+          </div>
 
-          <span className="hidden h-2 w-2 rotate-45 border border-[#a98c58]/60 bg-[#a98c58]/15 sm:block" />
+          <div className="order-1 flex items-center gap-4 sm:order-2">
+            <span className="hidden h-2 w-2 rotate-45 border border-[#a98c58]/60 bg-[#a98c58]/15 sm:block" />
 
-          <Link
-            href="/legal"
-            className="text-xs uppercase tracking-widest text-stone-500 transition-colors duration-300 hover:text-[#c9b48a]"
-          >
-            {t("LegalLink")}
-          </Link>
+            <Link
+              href="/legal"
+              className="text-xs uppercase tracking-widest text-stone-500 transition-colors duration-300 hover:text-[#c9b48a]"
+            >
+              {t("LegalLink")}
+            </Link>
+          </div>
         </div>
       </div>
     </footer>
