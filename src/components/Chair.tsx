@@ -47,7 +47,7 @@ function Chair({
         href={`/${locale}/${chair.href}`}
         className="absolute inset-0"
         aria-label={chair.name}
-      />
+      >
 
       {/* Zone de hover : couvre tout le hotspot, pas juste le rond */}
       <div
@@ -108,6 +108,7 @@ function Chair({
           </AnimatePresence>
         </div>
       </div>
+      </Link>
     </motion.div>
   );
 }

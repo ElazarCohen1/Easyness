@@ -9,6 +9,7 @@ import Chairs from "@/components/Chairs";
 import ArcBubbleCarousel from "@/components/Bulles";
 import ContactCTA from "./ContactCTA";
 import SectionDivider from "./SectionDivider";
+import ImageMeasure from "./measure";
 
 export default function HomeExperience({ locale }: { locale: string }) {
   const containerRef = useRef<HTMLDivElement>(null);
@@ -63,6 +64,7 @@ export default function HomeExperience({ locale }: { locale: string }) {
           <ContactCTA variant="light" withBackground={false} />
         </div>
       </section>
+      
     </div>
   );
 }

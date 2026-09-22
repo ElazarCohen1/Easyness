@@ -5,6 +5,7 @@ import LanguageSwitcher from "./lngSwitcher";
 import Image from "next/image";
 import logo from "@public/logo2.png";
 import { useState, useEffect } from "react";
+import MobileNav from "./MobileNav";
 
 type NavTranslations = {
   domains: string;
@@ -30,8 +31,10 @@ export default function NavClient({
   }, []);
 
   return (
+    <>
+    <MobileNav translations={translations} />
     <header
-      className={`fixed top-0 left-0 w-full z-50 bg-transparent hover:bg-white ${
+      className={`hidden md:block fixed top-0 left-0 w-full z-50 bg-transparent  hover:bg-white ${
         scrolled ? "bg-white" : ""
       }`}
     >
@@ -89,5 +92,6 @@ export default function NavClient({
         </div>
       </div>
     </header>
+  </>
   );
 }

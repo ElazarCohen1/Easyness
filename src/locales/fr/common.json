@@ -57,15 +57,15 @@
   },
 
   "Footer": {
-    "CompanyName": "SecurHome",
-    "Tagline": "Votre partenaire de confiance pour la garde, l'entretien et le nettoyage de résidences secondaires en France.",
+    "CompanyName": "Easyness",
+    "Tagline": "Votre assistance administrative au quotidien : juridique, fiscal, immobilier, succession et conseil, avec le concours de notre réseau d'avocats partenaires.",
+    "NavigationTitle": "Navigation",
     "ContactTitle": "Contact",
-    "EmailLabel": "Email",
-    "Email": "contact@securhome.fr",
-    "PhoneLabel": "Téléphone",
+    "Email": "contact@easyness.fr",
     "Phone": "+33 (0)1 23 45 67 89",
-    "Copyright": "© 2026 SecurHome. Tous droits réservés.",
-    "LegalLink": "Mentions légales et Cookies"
+    "ResponseTime": "Réponse sous 24 heures ouvrées",
+    "Copyright": "© {year} Easyness. Tous droits réservés.",
+    "LegalLink": "Mentions légales et cookies"
   },
 
   "Legal": {
@@ -85,29 +85,53 @@
     }
   },
 
-  "Testimony": {
-    "Title": "Témoignages",
-    "Subtitle": "Découvrez pourquoi des centaines de propriétaires nous font confiance.",
-    "Reviews": [
-      {
-        "Name": "Sophie L.",
-        "Location": "Résidence à Deauville",
-        "Text": "Nous avons choisi le forfait Premium pour notre maison en Normandie. L'équipe est très discrète et professionnelle, la maison est toujours impeccable à notre arrivée."
-      },
-      {
-        "Name": "Marc R.",
-        "Location": "Résidence à Nice",
-        "Text": "Un service de gardiennage indispensable quand on habite loin. Les rapports photos sont rassurants et le ménage est extrêmement bien fait."
-      }
-    ]
+  "LegalSheet": {
+    "Title": "Fiche d'identité juridique",
+    "Eyebrow": "Cadre juridique",
+    "Subtitle": "Les informations légales et administratives d'Easyness, en toute transparence.",
+    "Identity": {
+      "Title": "Informations légales",
+      "Fields": [
+        { "Label": "Raison sociale", "Value": "Easyness [forme juridique]" },
+        { "Label": "Forme juridique", "Value": "À compléter (ex. SASU, EURL...)" },
+        { "Label": "Capital social", "Value": "À compléter" },
+        { "Label": "SIREN / SIRET", "Value": "À compléter" },
+        { "Label": "RCS", "Value": "À compléter (ville d'immatriculation)" },
+        { "Label": "Code NAF / APE", "Value": "À compléter" },
+        { "Label": "N° TVA intracommunautaire", "Value": "À compléter" },
+        { "Label": "Siège social", "Value": "À compléter" }
+      ]
+    },
+    "Domains": {
+      "Title": "Domaines d'intervention",
+      "List": ["Juridique", "Fiscal", "Comptable", "Financier", "Commercial", "Patrimonial", "Bancaire", "Immobilier"]
+    },
+    "Insurance": {
+      "Title": "Assurance professionnelle",
+      "Text": "Easyness souscrit une assurance responsabilité civile professionnelle couvrant l'ensemble de ses prestations d'accompagnement administratif. Références disponibles sur demande."
+    },
+    "Network": {
+      "Title": "Réseau de partenaires",
+      "Text": "Pour les dossiers nécessitant une expertise juridique approfondie, Easyness s'appuie sur un réseau d'avocats partenaires, garantissant à chaque client un accompagnement complet et sécurisé."
+    }
   },
 
   "Presentation": {
-    "Title": "La Société",
-    "Paragraph1": "Créée en France par des passionnés de l'immobilier et de la gestion de patrimoine, SecurHome est née d'un constat simple : une résidence secondaire a besoin de présence, d'attention et d'entretien durant les longues périodes d'absence de ses propriétaires.",
-    "Paragraph2": "Nous intervenons partout en France pour garantir la sécurité et la propreté de votre bien. Nos experts réalisent des rondes régulières, s'assurent de la bonne isolation et du fonctionnement des installations, et effectuent des ménages complets avant votre retour.",
-    "Paragraph3": "Nos valeurs reposent sur la confiance, la discrétion et l'excellence. Chaque agent est formé et certifié pour assurer la plus grande qualité de service possible.",
-    "CtaButton": "Obtenir une estimation"
+    "Title": "L'expertise Easyness",
+    "Eyebrow": "À propos d'Easyness",
+    "Subtitle": "Un accompagnement administratif sur-mesure, pensé pour vous simplifier la vie.",
+    "Paragraph1": "Easyness accompagne particuliers et professionnels dans l'ensemble de leurs démarches administratives, avec une approche claire, réactive et sans jargon inutile.",
+    "Paragraph2": "De la constitution d'un dossier fiscal à la gestion d'une succession, en passant par le suivi comptable, financier, commercial ou immobilier, notre équipe prend en charge chaque étape avec rigueur.",
+    "Paragraph3": "Lorsqu'un dossier nécessite une expertise juridique approfondie, nous nous appuyons sur un réseau d'avocats partenaires, pour garantir à chaque client un accompagnement complet et sécurisé, du premier contact jusqu'à la résolution.",
+    "Values": {
+      "Title": "Nos valeurs",
+      "List": [
+        { "Title": "Confiance", "Text": "Chaque dossier est traité avec discrétion et rigueur, dans le respect total de la confidentialité de nos clients." },
+        { "Title": "Efficacité", "Text": "Nous simplifions les démarches complexes pour vous faire gagner du temps, à chaque étape du processus." },
+        { "Title": "Sérieux", "Text": "Une équipe formée et exigeante, qui s'engage sur la qualité et le suivi de chaque dossier." },
+        { "Title": "Réseau", "Text": "Un réseau d'avocats partenaires mobilisable à tout moment pour les situations qui l'exigent." }
+      ]
+    }
   },
 
   "Domains": {

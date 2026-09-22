@@ -10,7 +10,7 @@ function Chairs({
   scrollProgress?: MotionValue<number>;
 }) {
   return (
-    <div>
+    <div className="hidden md:block">
       {chairs.map((chair) => (
         <Chair
           key={chair.id}

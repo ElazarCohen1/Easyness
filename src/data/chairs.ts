@@ -3,8 +3,8 @@ import type { Hotspot } from "@/types/hotspot";
 export const chairs: Hotspot[] = [
   {
     id: "chair-1",
-    name: "Chair 1",
-    href: "/domains/1",
+    name: "Juridique",
+    href: "/domains/juridique",
     x: 0.13,
     y: 45.55,
     width:11.069 ,
@@ -13,8 +13,8 @@ export const chairs: Hotspot[] = [
   },
   {
     id: "chair-2",
-    name: "Chaise 2",
-    href: "/domains/2",
+    name: "Fiscal",
+    href: "/domains/fiscal",
     x: 16.57,
     y: 47.00,
     width: 10.107,
@@ -23,8 +23,8 @@ export const chairs: Hotspot[] = [
   },
   {
     id: "chair-3",
-    name: "Chaise 3",
-    href: "/domains/3",
+    name: "comptable",
+    href: "/domains/comptable",
     x: 52.81,
     y: 47.82,
     width: 4.675,
@@ -34,7 +34,7 @@ export const chairs: Hotspot[] = [
   {
     id: "chair-4",
     name: "Chaise 3",
-    href: "/domains/4",
+    href: "/domains/financier",
     x: 74.26,
     y: 47.52,
     width: 6.738,
@@ -43,8 +43,8 @@ export const chairs: Hotspot[] = [
   },
   {
     id: "chair-5",
-    name: "Chaise 3",
-    href: "/domains/5",
+    name: "Commercial",
+    href: "/domains/commercial",
     x: 86.25,
     y: 46.09,
     width: 10.182,
@@ -53,8 +53,8 @@ export const chairs: Hotspot[] = [
   },
   {
     id: "Table",
-    name: "Table ",
-    href: "/domains/6",
+    name: "All",
+    href: "/domains",
     x: 45.74,
     y: 70.04,
     width: 10.00,

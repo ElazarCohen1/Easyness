@@ -58,15 +58,15 @@
   },
 
   "Footer": {
-    "CompanyName": "SecurHome",
-    "Tagline": "Your trusted partner for the care, upkeep, and cleaning of second homes across France.",
+    "CompanyName": "Easyness",
+    "Tagline": "Your everyday administrative support: legal, tax, real estate, estate planning and advisory, backed by our network of partner lawyers.",
+    "NavigationTitle": "Navigation",
     "ContactTitle": "Contact",
-    "EmailLabel": "Email",
-    "Email": "contact@securhome.fr",
-    "PhoneLabel": "Phone",
+    "Email": "contact@easyness.fr",
     "Phone": "+33 (0)1 23 45 67 89",
-    "Copyright": "© 2026 SecurHome. All rights reserved.",
-    "LegalLink": "Legal notice and Cookies"
+    "ResponseTime": "Reply within 24 business hours",
+    "Copyright": "© {year} Easyness. All rights reserved.",
+    "LegalLink": "Legal notice and cookies"
   },
 
   "Legal": {
@@ -86,29 +86,53 @@
     }
   },
 
-  "Testimony": {
-    "Title": "Testimonials",
-    "Subtitle": "Discover why hundreds of homeowners trust us.",
-    "Reviews": [
-      {
-        "Name": "Sophie L.",
-        "Location": "Property in Deauville",
-        "Text": "We chose the Premium package for our house in Normandy. The team is very discreet and professional, and the house is always spotless when we arrive."
-      },
-      {
-        "Name": "Marc R.",
-        "Location": "Property in Nice",
-        "Text": "An essential caretaking service when you live far away. The photo reports are reassuring and the cleaning is done extremely well."
-      }
-    ]
+  "LegalSheet": {
+    "Title": "Legal Identity Sheet",
+    "Eyebrow": "Legal framework",
+    "Subtitle": "Easyness's legal and administrative information, in full transparency.",
+    "Identity": {
+      "Title": "Legal information",
+      "Fields": [
+        { "Label": "Company name", "Value": "Easyness [legal form]" },
+        { "Label": "Legal form", "Value": "To be completed (e.g. SASU, EURL...)" },
+        { "Label": "Share capital", "Value": "To be completed" },
+        { "Label": "SIREN / SIRET", "Value": "To be completed" },
+        { "Label": "Trade register (RCS)", "Value": "To be completed (city of registration)" },
+        { "Label": "NAF / APE code", "Value": "To be completed" },
+        { "Label": "VAT number", "Value": "To be completed" },
+        { "Label": "Registered office", "Value": "To be completed" }
+      ]
+    },
+    "Domains": {
+      "Title": "Areas of intervention",
+      "List": ["Legal", "Tax", "Accounting", "Financial", "Commercial", "Estate", "Banking", "Real Estate"]
+    },
+    "Insurance": {
+      "Title": "Professional insurance",
+      "Text": "Easyness holds professional liability insurance covering all of its administrative support services. Details available on request."
+    },
+    "Network": {
+      "Title": "Partner network",
+      "Text": "For cases requiring in-depth legal expertise, Easyness relies on a network of partner lawyers, ensuring every client gets complete, secure support."
+    }
   },
 
   "Presentation": {
-    "Title": "The Company",
-    "Paragraph1": "Founded in France by real estate and wealth management enthusiasts, SecurHome was born from a simple observation: a second home needs presence, attention, and upkeep during its owners' long absences.",
-    "Paragraph2": "We operate throughout France to guarantee the security and cleanliness of your property. Our experts carry out regular rounds, check insulation and equipment are working properly, and perform thorough cleaning before your return.",
-    "Paragraph3": "Our values are built on trust, discretion, and excellence. Every agent is trained and certified to ensure the highest possible quality of service.",
-    "CtaButton": "Get an estimate"
+    "Title": "The Easyness Expertise",
+    "Eyebrow": "About Easyness",
+    "Subtitle": "Tailored administrative support, designed to make your life simpler.",
+    "Paragraph1": "Easyness supports individuals and professionals through all of their administrative procedures, with a clear, responsive approach and no unnecessary jargon.",
+    "Paragraph2": "From putting together a tax file to managing an estate, through accounting, financial, commercial, or real estate follow-up, our team handles every step with rigor.",
+    "Paragraph3": "When a case requires in-depth legal expertise, we rely on a network of partner lawyers, ensuring every client gets complete, secure support from first contact through to resolution.",
+    "Values": {
+      "Title": "Our values",
+      "List": [
+        { "Title": "Trust", "Text": "Every case is handled with discretion and rigor, in full respect of our clients' confidentiality." },
+        { "Title": "Efficiency", "Text": "We simplify complex procedures to save you time at every step of the process." },
+        { "Title": "Seriousness", "Text": "A trained, demanding team committed to quality and follow-through on every case." },
+        { "Title": "Network", "Text": "A network of partner lawyers ready to step in whenever a situation requires it." }
+      ]
+    }
   },
 
   "Domains": {
