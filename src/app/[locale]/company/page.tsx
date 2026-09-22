@@ -77,6 +77,7 @@ export default async function Company({
             {values.map((value, idx) => {
               const Icon = ICONS[idx % ICONS.length];
               return (
+                
                 <div
                   key={idx}
                   className="rounded-3xl border border-[#a98c58]/20 bg-stone-50/60 p-8"
