@@ -1,32 +1,11 @@
 import { notFound } from "next/navigation";
 import { getTranslations } from "next-intl/server";
 import { Link } from "@/i18n/navigation";
-import {
-  ArrowLeft,
-  Scale,
-  Landmark,
-  Calculator,
-  TrendingUp,
-  Handshake,
-  Gem,
-  Banknote,
-  Home as HomeIcon,
-  type LucideIcon,
-} from "lucide-react";
 import ContactCTA from "@/components/ContactCTA";
 import SectionDivider from "@/components/SectionDivider";
 import { domainIds, type DomainId } from "@/data/domains";
-
-const ICONS: Record<DomainId, LucideIcon> = {
-  juridique: Scale,
-  fiscal: Landmark,
-  comptable: Calculator,
-  financier: TrendingUp,
-  commercial: Handshake,
-  patrimonial: Gem,
-  bancaire: Banknote,
-  immobilier: HomeIcon,
-};
+import {ArrowLeft} from "lucide-react";
+import { ICONS } from "@/data/icons";
 
 export async function generateStaticParams() {
   return domainIds.map((id) => ({ id }));
@@ -63,7 +42,7 @@ export default async function DomainPage({
   return (
     <div className="relative min-h-screen w-full overflow-hidden bg-white">
       <div
-        className="pointer-events-none absolute left-1/2 top-0 h-[500px] w-[900px] -translate-x-1/2 -translate-y-1/2 rounded-full opacity-25 blur-3xl"
+        className="pointer-events-none absolute left-1/2 top-0 h-125 w-225 -translate-x-1/2 -translate-y-1/2 rounded-full opacity-25 blur-3xl"
         style={{
           background: "radial-gradient(circle, rgba(169,140,88,0.3) 0%, transparent 70%)",
         }}
@@ -120,7 +99,9 @@ export default async function DomainPage({
 
       <SectionDivider />
 
-      <ContactCTA variant="light" withBackground={false} />
+      <div className="relative pb-28 md:pb-36">
+        <ContactCTA variant="light" withBackground={false} />
+      </div>
     </div>
   );
 }

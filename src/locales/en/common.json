@@ -5,9 +5,7 @@
     "Contact": "Contact",
     "Company": "Our expertise",
     "vip": "V.I.P"
-
   },
-
   "Home": {
     "Welcome": "Welcome",
     "Hero": {
@@ -23,18 +21,16 @@
       "Advisory": "Advisory"
     }
   },
-
   "ContactCTA": {
-    "Eyebrow": "Let's talk about your project",
+    "Eyebrow": "Attentive to Your Needs",
     "Title": "Contact us",
-    "Description": "Every procedure deserves careful attention and a tailored response. Our team reviews your situation and supports you, with the help of our partner network of lawyers if needed.",
+    "Description": "Every case deserves careful attention and meticulous analysis. A legal professional will personally respond to your inquiry promptly and guide you through every step of the process. If necessary, you will be referred to a specialist or a lawyer from our carefully selected network.",
     "Button": "Get in touch"
   },
-
   "Contact": {
-    "Eyebrow": "Let's talk about your project",
+    "Eyebrow": "Attentive to Your Needs",
     "Title": "Contact us",
-    "Subtitle": "Our team reviews your situation carefully and responds within 24 hours, with the support of our partner network of lawyers if your case requires it.",
+    "Subtitle": "Every case deserves careful attention and meticulous analysis. A legal professional will personally respond to your inquiry promptly and guide you through every step of the process. If necessary, you will be referred to a specialist or a lawyer from our carefully selected network.",
     "Form": {
       "FirstNameLabel": "First name",
       "FirstNamePlaceholder": "John",
@@ -56,19 +52,17 @@
       "Note": "Real estate, succession, tax, or advisory matters: every case is reviewed individually, with the support of our partner network of lawyers if your situation requires it."
     }
   },
-
   "Footer": {
     "CompanyName": "Easyness",
     "Tagline": "Your everyday administrative support: legal, tax, real estate, estate planning and advisory, backed by our network of partner lawyers.",
     "NavigationTitle": "Navigation",
     "ContactTitle": "Contact",
-    "Email": "contact@easyness.fr",
+    "Email": "e.l.easyness@hotmail.com",
     "Phone": "+33 (0)1 23 45 67 89",
     "ResponseTime": "Reply within 24 business hours",
     "Copyright": "© {year} Easyness. All rights reserved.",
     "LegalLink": "Legal notice and cookies"
   },
-
   "Legal": {
     "Title": "Legal Notice & Cookies",
     "Intro": "In accordance with the provisions of French law no. 2004-575 of 21 June 2004 on confidence in the digital economy, users of the SecurHome website are informed of the identity of the various parties involved in its creation and maintenance.",
@@ -85,7 +79,6 @@
       "Text": "This site uses cookies to improve your user experience and to measure audience statistics. By continuing to browse this site, you accept the use of these cookies."
     }
   },
-
   "LegalSheet": {
     "Title": "Legal Identity Sheet",
     "Eyebrow": "Legal framework",
@@ -93,19 +86,52 @@
     "Identity": {
       "Title": "Legal information",
       "Fields": [
-        { "Label": "Company name", "Value": "Easyness [legal form]" },
-        { "Label": "Legal form", "Value": "To be completed (e.g. SASU, EURL...)" },
-        { "Label": "Share capital", "Value": "To be completed" },
-        { "Label": "SIREN / SIRET", "Value": "To be completed" },
-        { "Label": "Trade register (RCS)", "Value": "To be completed (city of registration)" },
-        { "Label": "NAF / APE code", "Value": "To be completed" },
-        { "Label": "VAT number", "Value": "To be completed" },
-        { "Label": "Registered office", "Value": "To be completed" }
+        {
+          "Label": "Company name",
+          "Value": "Easyness [legal form]"
+        },
+        {
+          "Label": "Legal form",
+          "Value": "To be completed (e.g. SASU, EURL...)"
+        },
+        {
+          "Label": "Share capital",
+          "Value": "To be completed"
+        },
+        {
+          "Label": "SIREN / SIRET",
+          "Value": "To be completed"
+        },
+        {
+          "Label": "Trade register (RCS)",
+          "Value": "To be completed (city of registration)"
+        },
+        {
+          "Label": "NAF / APE code",
+          "Value": "To be completed"
+        },
+        {
+          "Label": "VAT number",
+          "Value": "To be completed"
+        },
+        {
+          "Label": "Registered office",
+          "Value": "To be completed"
+        }
       ]
     },
     "Domains": {
       "Title": "Areas of intervention",
-      "List": ["Legal", "Tax", "Accounting", "Financial", "Commercial", "Estate", "Banking", "Real Estate"]
+      "List": [
+        "Legal",
+        "Tax",
+        "Accounting",
+        "Financial",
+        "Commercial",
+        "Estate",
+        "Banking",
+        "Real Estate"
+      ]
     },
     "Insurance": {
       "Title": "Professional insurance",
@@ -116,7 +142,6 @@
       "Text": "For cases requiring in-depth legal expertise, Easyness relies on a network of partner lawyers, ensuring every client gets complete, secure support."
     }
   },
-
   "Presentation": {
     "Title": "The Easyness Expertise",
     "Eyebrow": "About Easyness",
@@ -127,26 +152,37 @@
     "Values": {
       "Title": "Our values",
       "List": [
-        { "Title": "Trust", "Text": "Every case is handled with discretion and rigor, in full respect of our clients' confidentiality." },
-        { "Title": "Efficiency", "Text": "We simplify complex procedures to save you time at every step of the process." },
-        { "Title": "Seriousness", "Text": "A trained, demanding team committed to quality and follow-through on every case." },
-        { "Title": "Network", "Text": "A network of partner lawyers ready to step in whenever a situation requires it." }
+        {
+          "Title": "Trust",
+          "Text": "Every case is handled with discretion and rigor, in full respect of our clients' confidentiality."
+        },
+        {
+          "Title": "Efficiency",
+          "Text": "We simplify complex procedures to save you time at every step of the process."
+        },
+        {
+          "Title": "Seriousness",
+          "Text": "A trained, demanding team committed to quality and follow-through on every case."
+        },
+        {
+          "Title": "Network",
+          "Text": "A network of partner lawyers ready to step in whenever a situation requires it."
+        }
       ]
     }
   },
-
   "Domains": {
     "PageEyebrow": "Our areas of expertise",
     "PageTitle": "Our Domains",
-    "PageSubtitle": "Comprehensive support, whatever your need. Discover how we can help you.",
+    "PageSubtitle": "Personalized and meticulous support to address your legal concerns with professionalism and diligence.",
     "DiscoverLabel": "Discover",
     "DetailEyebrow": "Area of expertise",
     "ServicesLabel": "What we do",
     "BackLink": "Back to domains",
     "Items": {
       "juridique": {
-        "Title": "Legal",
-        "Intro": "Clear legal support to safeguard every step of your procedures.",
+        "Title": "Administrative",
+        "Intro": "Assistance with administrative procedures and correspondence with public authorities.",
         "Description": "We help you understand and carry out your legal procedures, whether related to contracts, disputes or administrative formalities. Our partner network of lawyers steps in whenever your case requires specific expertise.",
         "Services": [
           "Review and drafting of contractual documents",
@@ -157,7 +193,7 @@
       },
       "fiscal": {
         "Title": "Taxation",
-        "Intro": "Optimise and secure your tax situation with peace of mind.",
+        "Intro": "Assistance with all procedures involving tax authorities, along with expert advice.",
         "Description": "From income tax returns to more complex tax situations, we help you understand your obligations and optimise your taxation in full compliance with current regulations.",
         "Services": [
           "Tax returns and administrative follow-up",
@@ -168,7 +204,7 @@
       },
       "comptable": {
         "Title": "Accounting",
-        "Intro": "Rigorous accounting management to simplify your daily life.",
+        "Intro": "Support with rigorous accounting management in compliance with the latest legislation, making your day-to-day life easier.",
         "Description": "We take care of tracking your accounts, preparing your accounting documents, and directing you to the right contacts for sound, transparent management of your activity or assets.",
         "Services": [
           "Tracking and organising your accounting documents",
@@ -190,7 +226,7 @@
       },
       "commercial": {
         "Title": "Commercial",
-        "Intro": "Support with your commercial and contractual procedures.",
+        "Intro": "Advice and assistance for all your business ventures.",
         "Description": "We support you in structuring and managing your business relationships, drafting your contracts, and handling the procedures related to your activity.",
         "Services": [
           "Drafting and reviewing commercial contracts",
@@ -201,7 +237,7 @@
       },
       "patrimonial": {
         "Title": "Estate Planning",
-        "Intro": "Protect and pass on your assets with complete confidence.",
+        "Intro": "Advice and assistance to protect your assets with confidence.",
         "Description": "Succession, transfer, estate organisation: we support you every step of the way to protect your assets and prepare calmly for your family's future.",
         "Services": [
           "Support with succession procedures",
@@ -223,13 +259,24 @@
       },
       "immobilier": {
         "Title": "Property & Rental Projects",
-        "Intro": "Complete support for your property and rental projects.",
+        "Intro": "Protection and recovery of rental income from operators or tenants.",
         "Description": "Buying, selling, renting or managing a rental property: we support you at every stage of your property project, with rigorous and personalised administrative follow-up.",
         "Services": [
           "Support with buying or selling procedures",
           "Management of rental files",
           "Administrative follow-up of your property project",
           "Advice tailored to your situation"
+        ]
+      },
+      "Fraud": {
+        "Title": "Fraud",
+        "Intro": "Recovery of amounts unlawfully debited from your bank account.",
+        "Description": "Achat, vente, location ou gestion locative : nous vous accompagnons à chaque étape de votre projet immobilier, avec un suivi administratif rigoureux et personnalisé.",
+        "Services": [
+          "Accompagnement dans vos démarches d'achat ou de vente",
+          "Gestion des dossiers de location",
+          "Suivi administratif de votre projet immobilier",
+          "Conseils adaptés à votre situation"
         ]
       }
     }

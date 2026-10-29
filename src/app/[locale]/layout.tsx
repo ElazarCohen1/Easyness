@@ -6,6 +6,7 @@ import { NextIntlClientProvider ,hasLocale } from "next-intl";
 import { routing } from "@/i18n/routing";
 import { notFound } from "next/navigation";
 import { getMessages, setRequestLocale } from "next-intl/server";
+import ContactCTA from "@/components/ContactCTA";
 
 
 export default async function LocaleLayout({
@@ -30,6 +31,7 @@ export default async function LocaleLayout({
         <NextIntlClientProvider locale={locale} messages={messages}>
           <Navbar />
           <main className="relative flex-1">{children}</main>
+          
           <Footer  />
         </NextIntlClientProvider>
         

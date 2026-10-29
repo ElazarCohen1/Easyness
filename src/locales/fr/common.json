@@ -6,12 +6,11 @@
     "Company": "Notre expertise",
     "vip": "V.I.P"
   },
-
   "Home": {
     "Welcome": "Bienvenue",
     "Hero": {
       "Eyebrow": "Nos domaines d'intervention",
-      "TitleLine1": "Un accompagnement sur-mesure,",
+      "TitleLine1": "Un accompagnement personnalisé,",
       "TitleLine2": "quel que soit votre besoin"
     },
     "Bubbles": {
@@ -22,18 +21,16 @@
       "Advisory": "Conseil"
     }
   },
-
   "ContactCTA": {
-    "Eyebrow": "Parlons de votre projet",
+    "Eyebrow": "A l'écoute de votre problématique",
     "Title": "Contactez-nous",
-    "Description": "Chaque démarche mérite une écoute attentive et une réponse sur mesure. Notre équipe étudie votre situation et vous accompagne, avec le concours de notre réseau d'avocats partenaires si besoin.",
+    "Description": "Chaque cas mérite une écoute attentive et une analyse méticuleuse. Un juriste répond personnelement à votre demande à bref délai et vous accompagne dans toutes les démarches. Si necessaire, vous serez orienté vers un spécialiste ou un avovat de notre reseau choisi par nos soins.",
     "Button": "Nous contacter"
   },
-
   "Contact": {
-    "Eyebrow": "Parlons de votre projet",
+    "Eyebrow": "A l'écoute de votre problématique",
     "Title": "Contactez-nous",
-    "Subtitle": "Notre équipe étudie votre situation avec attention et vous répond sous 24 heures, avec le concours de notre réseau d'avocats partenaires si votre dossier le nécessite.",
+    "Subtitle": "Chaque cas mérite une écoute attentive et une analyse méticuleuse. Un juriste répond personnelement à votre demande à bref délai et vous accompagne dans toutes les démarches. Si necessaire, vous serez orienté vers un spécialiste ou un avovat de notre reseau choisi par nos soins.",
     "Form": {
       "FirstNameLabel": "Prénom",
       "FirstNamePlaceholder": "Jean",
@@ -55,19 +52,17 @@
       "Note": "Immobilier, succession, fiscalité ou conseil : chaque dossier est étudié individuellement, avec l'appui de notre réseau d'avocats partenaires si votre situation le requiert."
     }
   },
-
   "Footer": {
     "CompanyName": "Easyness",
     "Tagline": "Votre assistance administrative au quotidien : juridique, fiscal, immobilier, succession et conseil, avec le concours de notre réseau d'avocats partenaires.",
     "NavigationTitle": "Navigation",
     "ContactTitle": "Contact",
-    "Email": "contact@easyness.fr",
+    "Email": "e.l.easyness@hotmail.com",
     "Phone": "+33 (0)1 23 45 67 89",
     "ResponseTime": "Réponse sous 24 heures ouvrées",
     "Copyright": "© {year} Easyness. Tous droits réservés.",
     "LegalLink": "Mentions légales et cookies"
   },
-
   "Legal": {
     "Title": "Mentions Légales & Cookies",
     "Intro": "Conformément aux dispositions de la loi n° 2004-575 du 21 juin 2004 pour la confiance en l'économie numérique, il est précisé aux utilisateurs du site SecurHome l'identité des différents intervenants dans le cadre de sa réalisation et de son suivi.",
@@ -84,7 +79,6 @@
       "Text": "Le site utilise des cookies pour améliorer votre expérience utilisateur et réaliser des mesures statistiques de fréquentation. En poursuivant votre navigation sur ce site, vous acceptez l'utilisation de ces cookies."
     }
   },
-
   "LegalSheet": {
     "Title": "Fiche d'identité juridique",
     "Eyebrow": "Cadre juridique",
@@ -92,19 +86,52 @@
     "Identity": {
       "Title": "Informations légales",
       "Fields": [
-        { "Label": "Raison sociale", "Value": "Easyness [forme juridique]" },
-        { "Label": "Forme juridique", "Value": "À compléter (ex. SASU, EURL...)" },
-        { "Label": "Capital social", "Value": "À compléter" },
-        { "Label": "SIREN / SIRET", "Value": "À compléter" },
-        { "Label": "RCS", "Value": "À compléter (ville d'immatriculation)" },
-        { "Label": "Code NAF / APE", "Value": "À compléter" },
-        { "Label": "N° TVA intracommunautaire", "Value": "À compléter" },
-        { "Label": "Siège social", "Value": "À compléter" }
+        {
+          "Label": "Raison sociale",
+          "Value": "Easyness [forme juridique]"
+        },
+        {
+          "Label": "Forme juridique",
+          "Value": "À compléter (ex. SASU, EURL...)"
+        },
+        {
+          "Label": "Capital social",
+          "Value": "À compléter"
+        },
+        {
+          "Label": "SIREN / SIRET",
+          "Value": "À compléter"
+        },
+        {
+          "Label": "RCS",
+          "Value": "À compléter (ville d'immatriculation)"
+        },
+        {
+          "Label": "Code NAF / APE",
+          "Value": "À compléter"
+        },
+        {
+          "Label": "N° TVA intracommunautaire",
+          "Value": "À compléter"
+        },
+        {
+          "Label": "Siège social",
+          "Value": "À compléter"
+        }
       ]
     },
     "Domains": {
       "Title": "Domaines d'intervention",
-      "List": ["Juridique", "Fiscal", "Comptable", "Financier", "Commercial", "Patrimonial", "Bancaire", "Immobilier"]
+      "List": [
+        "Juridique",
+        "Fiscal",
+        "Comptable",
+        "Financier",
+        "Commercial",
+        "Patrimonial",
+        "Bancaire",
+        "Immobilier"
+      ]
     },
     "Insurance": {
       "Title": "Assurance professionnelle",
@@ -115,7 +142,6 @@
       "Text": "Pour les dossiers nécessitant une expertise juridique approfondie, Easyness s'appuie sur un réseau d'avocats partenaires, garantissant à chaque client un accompagnement complet et sécurisé."
     }
   },
-
   "Presentation": {
     "Title": "L'expertise Easyness",
     "Eyebrow": "À propos d'Easyness",
@@ -126,26 +152,37 @@
     "Values": {
       "Title": "Nos valeurs",
       "List": [
-        { "Title": "Confiance", "Text": "Chaque dossier est traité avec discrétion et rigueur, dans le respect total de la confidentialité de nos clients." },
-        { "Title": "Efficacité", "Text": "Nous simplifions les démarches complexes pour vous faire gagner du temps, à chaque étape du processus." },
-        { "Title": "Sérieux", "Text": "Une équipe formée et exigeante, qui s'engage sur la qualité et le suivi de chaque dossier." },
-        { "Title": "Réseau", "Text": "Un réseau d'avocats partenaires mobilisable à tout moment pour les situations qui l'exigent." }
+        {
+          "Title": "Confiance",
+          "Text": "Chaque dossier est traité avec discrétion et rigueur, dans le respect total de la confidentialité de nos clients."
+        },
+        {
+          "Title": "Efficacité",
+          "Text": "Nous simplifions les démarches complexes pour vous faire gagner du temps, à chaque étape du processus."
+        },
+        {
+          "Title": "Sérieux",
+          "Text": "Une équipe formée et exigeante, qui s'engage sur la qualité et le suivi de chaque dossier."
+        },
+        {
+          "Title": "Réseau",
+          "Text": "Un réseau d'avocats partenaires mobilisable à tout moment pour les situations qui l'exigent."
+        }
       ]
     }
   },
-
   "Domains": {
     "PageEyebrow": "Nos domaines d'intervention",
     "PageTitle": "Nos Domaines",
-    "PageSubtitle": "Un accompagnement complet, quel que soit votre besoin. Découvrez comment nous pouvons vous aider.",
+    "PageSubtitle": "Un accompagnement personnalisé et méticuleux pour solutionner votre problématique avec professionalisme et serieux.",
     "DiscoverLabel": "Découvrir",
     "DetailEyebrow": "Domaine d'expertise",
     "ServicesLabel": "Ce que nous faisons",
     "BackLink": "Retour aux domaines",
     "Items": {
       "juridique": {
-        "Title": "Juridique",
-        "Intro": "Un accompagnement juridique clair pour sécuriser toutes vos démarches.",
+        "Title": "Administratif",
+        "Intro": "Assistance dans vos démarches administratives ou échanges avec des administrations",
         "Description": "Nous vous aidons à comprendre et à mener à bien vos démarches juridiques, qu'il s'agisse de contrats, de litiges ou de formalités administratives. Notre réseau d'avocats partenaires intervient dès que votre dossier nécessite une expertise spécifique.",
         "Services": [
           "Analyse et rédaction de documents contractuels",
@@ -156,7 +193,7 @@
       },
       "fiscal": {
         "Title": "Fiscalité",
-        "Intro": "Optimisez et sécurisez votre situation fiscale en toute sérénité.",
+        "Intro": "Assistance pour toute démarche auprès des administrations fiscales et conseils.",
         "Description": "De la déclaration de revenus aux situations fiscales plus complexes, nous vous accompagnons pour comprendre vos obligations et optimiser votre fiscalité dans le respect de la réglementation en vigueur.",
         "Services": [
           "Déclarations fiscales et suivi administratif",
@@ -167,7 +204,7 @@
       },
       "comptable": {
         "Title": "Comptabilité",
-        "Intro": "Une gestion comptable rigoureuse pour vous simplifier le quotidien.",
+        "Intro": "Assistance pour une gestion comptable rigoureuse et en accord avec les nouvelles législations pour vous simplifier le quotidien.",
         "Description": "Nous prenons en charge le suivi de vos comptes, la préparation de vos documents comptables et vous orientons vers les bons interlocuteurs pour une gestion saine et transparente de votre activité ou de votre patrimoine.",
         "Services": [
           "Suivi et organisation de vos documents comptables",
@@ -189,7 +226,7 @@
       },
       "commercial": {
         "Title": "Commercial",
-        "Intro": "Un accompagnement sur vos démarches commerciales et contractuelles.",
+        "Intro": "Conseil et assistance pour tout projet commercial.",
         "Description": "Nous vous accompagnons dans la structuration et le suivi de vos relations commerciales, la rédaction de vos contrats et la gestion des démarches liées à votre activité.",
         "Services": [
           "Rédaction et relecture de contrats commerciaux",
@@ -200,7 +237,7 @@
       },
       "patrimonial": {
         "Title": "Patrimoniale",
-        "Intro": "Protégez et transmettez votre patrimoine en toute confiance.",
+        "Intro": "Conseils et assistance afin de protéger votre patrimone en toute confiance.",
         "Description": "Succession, transmission, organisation patrimoniale : nous vous accompagnons à chaque étape pour protéger vos biens et préparer sereinement l'avenir de votre famille.",
         "Services": [
           "Accompagnement dans les démarches de succession",
@@ -222,7 +259,19 @@
       },
       "immobilier": {
         "Title": "Projet Immobilier & Locatif",
-        "Intro": "Un accompagnement complet pour vos projets immobiliers et locatifs.",
+        "Intro": "Protection et récupération des loyers envers des exploitants ou des locataires.",
+        "Description": "Achat, vente, location ou gestion locative : nous vous accompagnons à chaque étape de votre projet immobilier, avec un suivi administratif rigoureux et personnalisé.",
+        "Services": [
+          "Accompagnement dans vos démarches d'achat ou de vente",
+          "Gestion des dossiers de location",
+          "Suivi administratif de votre projet immobilier",
+          "Conseils adaptés à votre situation"
+        ]
+      },
+      
+      "Fraud": {
+        "Title": "Fraudes",
+        "Intro": "Récupération auprès de votre établissement bancaire des sommes indiment prélevées.",
         "Description": "Achat, vente, location ou gestion locative : nous vous accompagnons à chaque étape de votre projet immobilier, avec un suivi administratif rigoureux et personnalisé.",
         "Services": [
           "Accompagnement dans vos démarches d'achat ou de vente",

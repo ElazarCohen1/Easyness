@@ -1,29 +1,8 @@
 import { getTranslations } from "next-intl/server";
-import { Link } from "@/i18n/navigation";
-import {
-  ArrowUpRight,
-  Scale,
-  Landmark,
-  Calculator,
-  TrendingUp,
-  Handshake,
-  Gem,
-  Banknote,
-  Home as HomeIcon,
-  type LucideIcon,
-} from "lucide-react";
-import { domainIds, type DomainId } from "@/data/domains";
+import { domainIds } from "@/data/domains";
+import DomainsCard from "@/components/DomainsCard";
+import ContactCTA from "@/components/ContactCTA";
 
-const ICONS: Record<DomainId, LucideIcon> = {
-  juridique: Scale,
-  fiscal: Landmark,
-  comptable: Calculator,
-  financier: TrendingUp,
-  commercial: Handshake,
-  patrimonial: Gem,
-  bancaire: Banknote,
-  immobilier: HomeIcon,
-};
 
 export async function generateMetadata({
   params,
@@ -46,7 +25,7 @@ export default async function Domains({
   return (
     <div className="relative min-h-screen w-full overflow-hidden bg-white">
       <div
-        className="pointer-events-none absolute left-1/2 top-0 h-[500px] w-[900px] -translate-x-1/2 -translate-y-1/2 rounded-full opacity-25 blur-3xl"
+        className="pointer-events-none absolute left-1/2 top-0 h-125 w-225 -translate-x-1/2 -translate-y-1/2 rounded-full opacity-25 blur-3xl"
         style={{
           background: "radial-gradient(circle, rgba(169,140,88,0.3) 0%, transparent 70%)",
         }}
@@ -73,35 +52,14 @@ export default async function Domains({
 
         <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
           {domainIds.map((id) => {
-            const Icon = ICONS[id];
-            return (
-              <Link
-                key={id}
-                href={`/domains/${id}`}
-                className="group relative flex flex-col rounded-3xl border border-[#a98c58]/20 bg-stone-50/60 p-8 transition-all duration-300 hover:border-[#a98c58]/50 hover:bg-white hover:shadow-[0_8px_40px_-12px_rgba(169,140,88,0.25)] no-underline"
-              >
-                <div className="mb-6 flex h-12 w-12 items-center justify-center rounded-full border border-[#a98c58]/30 bg-white transition-colors group-hover:border-[#a98c58]/60">
-                  <Icon size={20} className="text-[#a98c58]" strokeWidth={1.5} />
-                </div>
-
-                <h3 className="mb-2 text-lg font-semibold text-stone-900">
-                  {t(`Items.${id}.Title`)}
-                </h3>
-                <p className="mb-6 flex-1 text-sm leading-relaxed text-stone-500">
-                  {t(`Items.${id}.Intro`)}
-                </p>
-
-                <div className="flex items-center gap-1 text-xs font-medium uppercase tracking-widest text-[#a98c58]">
-                  <span>{t("DiscoverLabel")}</span>
-                  <ArrowUpRight
-                    size={14}
-                    className="transition-transform duration-300 group-hover:translate-x-0.5 group-hover:-translate-y-0.5"
-                  />
-                </div>
-              </Link>
-            );
+            return <DomainsCard params={params} id={id} key={id} />
           })}
         </div>
+
+        <div className="relative mt-24">
+          <ContactCTA variant="light" withBackground={false} />
+        </div>
+        
       </div>
     </div>
   );

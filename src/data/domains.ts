@@ -1,3 +1,4 @@
+
 export const domainIds = [
   "juridique",
   "fiscal",
@@ -7,6 +8,10 @@ export const domainIds = [
   "patrimonial",
   "bancaire",
   "immobilier",
+  "Fraud"
 ] as const;
 
 export type DomainId = (typeof domainIds)[number];
+
+
+
